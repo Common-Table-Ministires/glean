@@ -1,0 +1,32 @@
+name: Glean
+options:
+  bundleIdPrefix: org.commontableministries
+  deploymentTarget:
+    iOS: "17.0"
+packages:
+  ScriptureCore:
+    path: ../
+targets:
+  Glean:
+    type: application
+    platform: iOS
+    sources:
+      - path: Glean
+    resources:
+      - path: Glean/Resources
+    dependencies:
+      - package: ScriptureCore
+        product: ScriptureCore
+      - sdk: libsqlite3.tbd
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.commontableministries.glean
+        MARKETING_VERSION: "0.0.8"
+        CURRENT_PROJECT_VERSION: "8"
+        SWIFT_VERSION: "6.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_KEY_UILaunchScreen_Generation: "YES"
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: "YES"
+        INFOPLIST_KEY_CFBundleDisplayName: "Glean"
+        GENERATE_INFOPLIST_FILE: "YES"
+        CODE_SIGN_STYLE: Automatic
