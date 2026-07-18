@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "ScriptureApp",
-    platforms: [.macOS(.v14)],
+    platforms: [.macOS(.v14), .iOS(.v17)],
     products: [
         .library(name: "ScriptureCore", targets: ["ScriptureCore"]),
         .executable(name: "ScripturePreview", targets: ["ScripturePreview"]),
