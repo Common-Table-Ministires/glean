@@ -23,3 +23,23 @@ jobs:
 
       - name: Test
         run: swift test
+
+  build-ios:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: cd ios && xcodegen generate
+
+      - name: Build Glean for iOS Simulator
+        run: |
+          cd ios
+          xcodebuild -project Glean.xcodeproj -scheme Glean \
+            -destination 'generic/platform=iOS Simulator' -configuration Debug build
