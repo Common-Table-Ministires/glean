@@ -14,7 +14,7 @@ Not a reading plan. Reading plans carry an implicit obligation (day 47 of 365) a
 
 This sits between the two: a scrollable feed of digestible passages, each with just enough surrounding context to make sense on its own without requiring the reader to have read what came before it. Read one, read twenty, close the app. No streaks, no guilt, no completion state to fall behind on.
 
-The doomscroll form factor is deliberate. People already have the scrolling habit and the muscle memory that goes with it; that muscle memory is the delivery mechanism being borrowed. The content is the inverse of what that habit usually feeds them.
+Call it grace-scrolling. The continuous, low-friction scroll people already do out of habit is the delivery mechanism, but what moves through it is the opposite of what that motion usually carries: not something demanding more of their attention, but something given freely, with nothing owed back. The habit is borrowed; what fills it is grace.
 
 ## Core principle
 
