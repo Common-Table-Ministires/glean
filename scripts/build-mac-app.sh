@@ -17,7 +17,33 @@ mkdir -p "$APP_BUNDLE/Contents/MacOS"
 mkdir -p "$APP_BUNDLE/Contents/Resources"
 
 cp "$BUILD_DIR/$APP_NAME" "$APP_BUNDLE/Contents/MacOS/$APP_NAME"
-cp -R "$BUILD_DIR/ScriptureApp_ScripturePreview.bundle" "$APP_BUNDLE/Contents/Resources/"
+
+# SPM resource bundles (selection pack + scripture DB / font)
+if [[ -d "$BUILD_DIR/ScriptureApp_ScripturePreview.bundle" ]]; then
+  cp -R "$BUILD_DIR/ScriptureApp_ScripturePreview.bundle" "$APP_BUNDLE/Contents/Resources/"
+fi
+# GleanSelection may land under the products dir or a nested path depending on SPM layout
+for bundle in \
+  "$BUILD_DIR/GleanSelection_GleanSelection.bundle" \
+  "$BUILD_DIR/biblealgo_GleanSelection.bundle" \
+  $(find .build -name 'GleanSelection_GleanSelection.bundle' -type d 2>/dev/null | head -3)
+do
+  if [[ -d "$bundle" ]]; then
+    cp -R "$bundle" "$APP_BUNDLE/Contents/Resources/"
+    break
+  fi
+done
+
+# Flatten critical assets into Contents/Resources so Bundle.main can find them
+# even if Bundle.module resolution fails inside a packaged .app (Jul 18 crash).
+SCRIPTURE_SRC=$(find .build -name 'scripture.sqlite' -type f 2>/dev/null | head -1 || true)
+FONT_SRC=$(find .build -name 'OpenDyslexic-Regular.otf' -type f 2>/dev/null | head -1 || true)
+if [[ -n "${SCRIPTURE_SRC}" ]]; then
+  cp "$SCRIPTURE_SRC" "$APP_BUNDLE/Contents/Resources/scripture.sqlite"
+fi
+if [[ -n "${FONT_SRC}" ]]; then
+  cp "$FONT_SRC" "$APP_BUNDLE/Contents/Resources/OpenDyslexic-Regular.otf"
+fi
 
 cat > "$APP_BUNDLE/Contents/Info.plist" << EOF
 <?xml version="1.0" encoding="UTF-8"?>
@@ -33,9 +59,9 @@ cat > "$APP_BUNDLE/Contents/Info.plist" << EOF
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>0.0.8</string>
+    <string>0.1.0</string>
     <key>CFBundleVersion</key>
-    <string>8</string>
+    <string>10</string>
     <key>LSMinimumSystemVersion</key>
     <string>14.0</string>
     <key>NSHighResolutionCapable</key>

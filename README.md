@@ -20,9 +20,31 @@ spec/         the content model (how Scripture gets chunked for the feed)
 decisions/    ADRs for load-bearing technical calls
 Sources/
   ScriptureCore/     data layer, chunking logic, models (translation-agnostic, meant to be reused by the iOS app)
-  ScripturePreview/  the macOS desktop prototype UI
+  ScripturePreview/  the macOS desktop prototype UI (thin client of GleanSelection for Feed)
 Tests/        unit + integration tests for ScriptureCore
 scripts/      build-mac-app.sh packages the prototype as a real .app bundle
+```
+
+## Integrity: selection and commentary are separate projects
+
+The formation **selection algorithm** (cooldowns, themes, top‑K, curated pack) lives in a **standalone package**:
+
+- Path (this machine): `~/Desktop/biblealgo` (SPM product **`GleanSelection`**)
+- Apps depend on it via SPM path dependency — **do not copy** `GleanAlgorithm` or packs into this repo
+- ScriptureCore stays SQLite + Stories/Study; it does not absorb scoring logic
+
+Open / public-domain **commentary** is also standalone:
+
+- Path: `~/sarah/gleancommentary` (SPM product **`GleanCommentary`**)
+- Short signed excerpts only; never interleave into Scripture or the flip card
+- See that package’s `INTEGRITY.md`
+
+```bash
+# Selection package tests (canonical brain)
+cd ~/Desktop/biblealgo && xattr -cr . && swift test
+
+# Commentary pack tests
+cd ~/sarah/gleancommentary && xattr -cr . && swift test
 ```
 
 ## Running the desktop prototype

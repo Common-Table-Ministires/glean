@@ -76,10 +76,35 @@ struct RootView: View {
         .environmentObject(readerSettings)
         .frame(width: 393, height: 852)
         .onAppear {
-            if store == nil, let dbPath = Bundle.module.path(forResource: "scripture", ofType: "sqlite") {
+            guard store == nil else { return }
+            if let dbPath = Self.scriptureDatabasePath() {
                 store = ScriptureStore(path: dbPath)
             }
         }
+    }
+
+    /// Resolve scripture.sqlite without trapping when SPM's Bundle.module is missing
+    /// inside a hand-packaged .app (ScripturePreview EXC_BREAKPOINT on Jul 18).
+    private static func scriptureDatabasePath() -> String? {
+        if let path = Bundle.main.path(forResource: "scripture", ofType: "sqlite") {
+            return path
+        }
+        // Nested SPM resource bundles copied into Contents/Resources/
+        if let resourceURL = Bundle.main.resourceURL {
+            let candidates = [
+                resourceURL.appendingPathComponent("scripture.sqlite"),
+                resourceURL.appendingPathComponent("ScriptureApp_ScripturePreview.bundle/Contents/Resources/scripture.sqlite"),
+                resourceURL.appendingPathComponent("ScriptureApp_ScripturePreview.bundle/scripture.sqlite"),
+            ]
+            for url in candidates where FileManager.default.fileExists(atPath: url.path) {
+                return url.path
+            }
+        }
+        // Last: SPM Bundle.module (works under `swift run` / Xcode scheme).
+        // Access only after main-bundle lookups failed; still can assert if the
+        // generated accessor cannot locate its bundle at all — packaging fix above
+        // is the real guard for .app launches.
+        return Bundle.module.path(forResource: "scripture", ofType: "sqlite")
     }
 }
 
