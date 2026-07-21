@@ -1,0 +1,583 @@
+{
+  "version": 1,
+  "translation": "BSB",
+  "description": "Formation-first seed passages for Glean. Boundaries and themes are hand-curated; verse text is filled by scripts/build_chunks.py from scripture.sqlite.",
+  "passages": [
+    {
+      "id": "GEN.1.1-5",
+      "book": "Genesis",
+      "chapter": 1,
+      "startVerse": 1,
+      "endVerse": 5,
+      "themes": ["creation", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "GEN.1.26-28",
+      "book": "Genesis",
+      "chapter": 1,
+      "startVerse": 26,
+      "endVerse": 28,
+      "themes": ["creation", "identity", "kingdom"],
+      "isPopular": true
+    },
+    {
+      "id": "GEN.12.1-4",
+      "book": "Genesis",
+      "chapter": 12,
+      "startVerse": 1,
+      "endVerse": 4,
+      "themes": ["faith", "identity", "hope"],
+      "isPopular": true
+    },
+    {
+      "id": "EXO.3.1-6",
+      "book": "Exodus",
+      "chapter": 3,
+      "startVerse": 1,
+      "endVerse": 6,
+      "themes": ["identity", "faith", "wisdom"],
+      "isPopular": false
+    },
+    {
+      "id": "EXO.14.13-14",
+      "book": "Exodus",
+      "chapter": 14,
+      "startVerse": 13,
+      "endVerse": 14,
+      "themes": ["hope", "faith", "peace"],
+      "isPopular": true
+    },
+    {
+      "id": "DEU.6.4-9",
+      "book": "Deuteronomy",
+      "chapter": 6,
+      "startVerse": 4,
+      "endVerse": 9,
+      "themes": ["love", "wisdom", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "RUT.1.16-17",
+      "book": "Ruth",
+      "chapter": 1,
+      "startVerse": 16,
+      "endVerse": 17,
+      "themes": ["love", "faith", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "1SA.16.6-13",
+      "book": "I Samuel",
+      "chapter": 16,
+      "startVerse": 6,
+      "endVerse": 13,
+      "themes": ["identity", "wisdom"],
+      "isPopular": false
+    },
+    {
+      "id": "1KI.19.9-13",
+      "book": "I Kings",
+      "chapter": 19,
+      "startVerse": 9,
+      "endVerse": 13,
+      "themes": ["suffering", "peace", "prayer"],
+      "isPopular": false
+    },
+    {
+      "id": "NEH.8.8-10",
+      "book": "Nehemiah",
+      "chapter": 8,
+      "startVerse": 8,
+      "endVerse": 10,
+      "themes": ["joy", "wisdom", "identity"],
+      "isPopular": false
+    },
+    {
+      "id": "JOB.1.20-22",
+      "book": "Job",
+      "chapter": 1,
+      "startVerse": 20,
+      "endVerse": 22,
+      "themes": ["suffering", "faith", "identity"],
+      "isPopular": false
+    },
+    {
+      "id": "JOB.19.23-27",
+      "book": "Job",
+      "chapter": 19,
+      "startVerse": 23,
+      "endVerse": 27,
+      "themes": ["hope", "suffering", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "PSA.1.1-6",
+      "book": "Psalms",
+      "chapter": 1,
+      "startVerse": 1,
+      "endVerse": 6,
+      "themes": ["wisdom", "identity", "justice"],
+      "isPopular": true
+    },
+    {
+      "id": "PSA.23.1-6",
+      "book": "Psalms",
+      "chapter": 23,
+      "startVerse": 1,
+      "endVerse": 6,
+      "themes": ["hope", "peace", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "PSA.27.1-5",
+      "book": "Psalms",
+      "chapter": 27,
+      "startVerse": 1,
+      "endVerse": 5,
+      "themes": ["hope", "faith", "peace"],
+      "isPopular": true
+    },
+    {
+      "id": "PSA.46.1-11",
+      "book": "Psalms",
+      "chapter": 46,
+      "startVerse": 1,
+      "endVerse": 11,
+      "themes": ["peace", "hope", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "PSA.51.1-12",
+      "book": "Psalms",
+      "chapter": 51,
+      "startVerse": 1,
+      "endVerse": 12,
+      "themes": ["repentance", "prayer", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "PSA.121.1-8",
+      "book": "Psalms",
+      "chapter": 121,
+      "startVerse": 1,
+      "endVerse": 8,
+      "themes": ["hope", "peace", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "PSA.139.1-14",
+      "book": "Psalms",
+      "chapter": 139,
+      "startVerse": 1,
+      "endVerse": 14,
+      "themes": ["identity", "creation", "love"],
+      "isPopular": true
+    },
+    {
+      "id": "PRO.3.5-8",
+      "book": "Proverbs",
+      "chapter": 3,
+      "startVerse": 5,
+      "endVerse": 8,
+      "themes": ["wisdom", "faith", "peace"],
+      "isPopular": true
+    },
+    {
+      "id": "ECC.3.1-8",
+      "book": "Ecclesiastes",
+      "chapter": 3,
+      "startVerse": 1,
+      "endVerse": 8,
+      "themes": ["wisdom", "suffering", "peace"],
+      "isPopular": true
+    },
+    {
+      "id": "ISA.40.28-31",
+      "book": "Isaiah",
+      "chapter": 40,
+      "startVerse": 28,
+      "endVerse": 31,
+      "themes": ["hope", "suffering", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "ISA.43.1-3",
+      "book": "Isaiah",
+      "chapter": 43,
+      "startVerse": 1,
+      "endVerse": 3,
+      "themes": ["identity", "hope", "love"],
+      "isPopular": true
+    },
+    {
+      "id": "ISA.53.3-6",
+      "book": "Isaiah",
+      "chapter": 53,
+      "startVerse": 3,
+      "endVerse": 6,
+      "themes": ["suffering", "repentance", "hope"],
+      "isPopular": true
+    },
+    {
+      "id": "ISA.55.1-3",
+      "book": "Isaiah",
+      "chapter": 55,
+      "startVerse": 1,
+      "endVerse": 3,
+      "themes": ["hope", "peace", "kingdom"],
+      "isPopular": false
+    },
+    {
+      "id": "JER.29.11-14",
+      "book": "Jeremiah",
+      "chapter": 29,
+      "startVerse": 11,
+      "endVerse": 14,
+      "themes": ["hope", "prayer", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "LAM.3.21-26",
+      "book": "Lamentations",
+      "chapter": 3,
+      "startVerse": 21,
+      "endVerse": 26,
+      "themes": ["hope", "suffering", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "MIC.6.6-8",
+      "book": "Micah",
+      "chapter": 6,
+      "startVerse": 6,
+      "endVerse": 8,
+      "themes": ["justice", "wisdom", "love"],
+      "isPopular": true
+    },
+    {
+      "id": "HAB.3.17-19",
+      "book": "Habakkuk",
+      "chapter": 3,
+      "startVerse": 17,
+      "endVerse": 19,
+      "themes": ["faith", "joy", "suffering"],
+      "isPopular": false
+    },
+    {
+      "id": "MAT.5.1-12",
+      "book": "Matthew",
+      "chapter": 5,
+      "startVerse": 1,
+      "endVerse": 12,
+      "themes": ["kingdom", "joy", "suffering"],
+      "isPopular": true
+    },
+    {
+      "id": "MAT.6.9-15",
+      "book": "Matthew",
+      "chapter": 6,
+      "startVerse": 9,
+      "endVerse": 15,
+      "themes": ["prayer", "repentance", "kingdom"],
+      "isPopular": true
+    },
+    {
+      "id": "MAT.11.28-30",
+      "book": "Matthew",
+      "chapter": 11,
+      "startVerse": 28,
+      "endVerse": 30,
+      "themes": ["peace", "hope", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "MAT.22.36-40",
+      "book": "Matthew",
+      "chapter": 22,
+      "startVerse": 36,
+      "endVerse": 40,
+      "themes": ["love", "wisdom", "kingdom"],
+      "isPopular": true
+    },
+    {
+      "id": "MAR.4.35-41",
+      "book": "Mark",
+      "chapter": 4,
+      "startVerse": 35,
+      "endVerse": 41,
+      "themes": ["faith", "peace", "hope"],
+      "isPopular": true
+    },
+    {
+      "id": "LUK.15.11-24",
+      "book": "Luke",
+      "chapter": 15,
+      "startVerse": 11,
+      "endVerse": 24,
+      "themes": ["repentance", "love", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "LUK.10.25-37",
+      "book": "Luke",
+      "chapter": 10,
+      "startVerse": 25,
+      "endVerse": 37,
+      "themes": ["love", "justice", "wisdom"],
+      "isPopular": true
+    },
+    {
+      "id": "JHN.1.1-5",
+      "book": "John",
+      "chapter": 1,
+      "startVerse": 1,
+      "endVerse": 5,
+      "themes": ["creation", "identity", "hope"],
+      "isPopular": true
+    },
+    {
+      "id": "JHN.3.16-17",
+      "book": "John",
+      "chapter": 3,
+      "startVerse": 16,
+      "endVerse": 17,
+      "themes": ["love", "faith", "hope"],
+      "isPopular": true
+    },
+    {
+      "id": "JHN.10.11-16",
+      "book": "John",
+      "chapter": 10,
+      "startVerse": 11,
+      "endVerse": 16,
+      "themes": ["identity", "love", "peace"],
+      "isPopular": true
+    },
+    {
+      "id": "JHN.14.1-6",
+      "book": "John",
+      "chapter": 14,
+      "startVerse": 1,
+      "endVerse": 6,
+      "themes": ["hope", "peace", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "JHN.15.1-8",
+      "book": "John",
+      "chapter": 15,
+      "startVerse": 1,
+      "endVerse": 8,
+      "themes": ["identity", "love", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "ACT.2.42-47",
+      "book": "Acts",
+      "chapter": 2,
+      "startVerse": 42,
+      "endVerse": 47,
+      "themes": ["love", "prayer", "joy"],
+      "isPopular": true
+    },
+    {
+      "id": "ROM.5.1-5",
+      "book": "Romans",
+      "chapter": 5,
+      "startVerse": 1,
+      "endVerse": 5,
+      "themes": ["hope", "suffering", "peace"],
+      "isPopular": true
+    },
+    {
+      "id": "ROM.8.28-39",
+      "book": "Romans",
+      "chapter": 8,
+      "startVerse": 28,
+      "endVerse": 39,
+      "themes": ["love", "hope", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "ROM.12.1-2",
+      "book": "Romans",
+      "chapter": 12,
+      "startVerse": 1,
+      "endVerse": 2,
+      "themes": ["identity", "wisdom", "repentance"],
+      "isPopular": true
+    },
+    {
+      "id": "1CO.13.1-13",
+      "book": "I Corinthians",
+      "chapter": 13,
+      "startVerse": 1,
+      "endVerse": 13,
+      "themes": ["love", "faith", "hope"],
+      "isPopular": true
+    },
+    {
+      "id": "2CO.1.3-7",
+      "book": "II Corinthians",
+      "chapter": 1,
+      "startVerse": 3,
+      "endVerse": 7,
+      "themes": ["suffering", "peace", "hope"],
+      "isPopular": false
+    },
+    {
+      "id": "2CO.12.7-10",
+      "book": "II Corinthians",
+      "chapter": 12,
+      "startVerse": 7,
+      "endVerse": 10,
+      "themes": ["suffering", "faith", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "GAL.5.22-25",
+      "book": "Galatians",
+      "chapter": 5,
+      "startVerse": 22,
+      "endVerse": 25,
+      "themes": ["love", "peace", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "EPH.2.8-10",
+      "book": "Ephesians",
+      "chapter": 2,
+      "startVerse": 8,
+      "endVerse": 10,
+      "themes": ["faith", "identity", "hope"],
+      "isPopular": true
+    },
+    {
+      "id": "EPH.6.10-18",
+      "book": "Ephesians",
+      "chapter": 6,
+      "startVerse": 10,
+      "endVerse": 18,
+      "themes": ["faith", "prayer", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "PHP.4.4-9",
+      "book": "Philippians",
+      "chapter": 4,
+      "startVerse": 4,
+      "endVerse": 9,
+      "themes": ["joy", "peace", "prayer"],
+      "isPopular": true
+    },
+    {
+      "id": "COL.3.12-17",
+      "book": "Colossians",
+      "chapter": 3,
+      "startVerse": 12,
+      "endVerse": 17,
+      "themes": ["love", "peace", "wisdom"],
+      "isPopular": false
+    },
+    {
+      "id": "1TH.5.16-18",
+      "book": "I Thessalonians",
+      "chapter": 5,
+      "startVerse": 16,
+      "endVerse": 18,
+      "themes": ["joy", "prayer", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "2TI.1.6-8",
+      "book": "II Timothy",
+      "chapter": 1,
+      "startVerse": 6,
+      "endVerse": 8,
+      "themes": ["faith", "identity", "suffering"],
+      "isPopular": false
+    },
+    {
+      "id": "HEB.4.14-16",
+      "book": "Hebrews",
+      "chapter": 4,
+      "startVerse": 14,
+      "endVerse": 16,
+      "themes": ["prayer", "hope", "identity"],
+      "isPopular": true
+    },
+    {
+      "id": "HEB.11.1-3",
+      "book": "Hebrews",
+      "chapter": 11,
+      "startVerse": 1,
+      "endVerse": 3,
+      "themes": ["faith", "hope", "creation"],
+      "isPopular": true
+    },
+    {
+      "id": "HEB.12.1-3",
+      "book": "Hebrews",
+      "chapter": 12,
+      "startVerse": 1,
+      "endVerse": 3,
+      "themes": ["faith", "suffering", "hope"],
+      "isPopular": true
+    },
+    {
+      "id": "JAS.1.2-5",
+      "book": "James",
+      "chapter": 1,
+      "startVerse": 2,
+      "endVerse": 5,
+      "themes": ["suffering", "wisdom", "joy"],
+      "isPopular": true
+    },
+    {
+      "id": "1PE.1.3-9",
+      "book": "I Peter",
+      "chapter": 1,
+      "startVerse": 3,
+      "endVerse": 9,
+      "themes": ["hope", "suffering", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "1PE.5.6-10",
+      "book": "I Peter",
+      "chapter": 5,
+      "startVerse": 6,
+      "endVerse": 10,
+      "themes": ["suffering", "hope", "peace"],
+      "isPopular": false
+    },
+    {
+      "id": "1JN.4.7-12",
+      "book": "I John",
+      "chapter": 4,
+      "startVerse": 7,
+      "endVerse": 12,
+      "themes": ["love", "identity", "faith"],
+      "isPopular": true
+    },
+    {
+      "id": "REV.21.1-5",
+      "book": "Revelation of John",
+      "chapter": 21,
+      "startVerse": 1,
+      "endVerse": 5,
+      "themes": ["hope", "creation", "kingdom"],
+      "isPopular": true
+    },
+    {
+      "id": "REV.22.1-5",
+      "book": "Revelation of John",
+      "chapter": 22,
+      "startVerse": 1,
+      "endVerse": 5,
+      "themes": ["hope", "kingdom", "peace"],
+      "isPopular": false
+    }
+  ]
+}
