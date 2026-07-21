@@ -7,6 +7,8 @@ struct StoryReaderView: View {
     let translation: BibleTranslation
     @ObservedObject var progressStore: ReadingProgressStore
 
+    @Environment(\.appTheme) private var theme
+
     @State private var chunks: [Chunk] = []
     @State private var index = 0
 
@@ -19,7 +21,7 @@ struct StoryReaderView: View {
                         .padding(.top, 30)
                     Text("Part \(index + 1) of \(chunks.count)")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(theme.secondaryText)
                         .padding(.top, 8)
                 } else {
                     ProgressView()
@@ -27,6 +29,7 @@ struct StoryReaderView: View {
                 }
             }
         }
+        .background(theme.background.ignoresSafeArea())
         .navigationTitle(story.title)
         .navigationBarTitleDisplayMode(.inline)
         // Same .bottomBar-inside-TabView rendering issue as FeedView; see the
@@ -34,7 +37,7 @@ struct StoryReaderView: View {
         .safeAreaInset(edge: .bottom) {
             HStack {
                 Button {
-                    index -= 1
+                    index = max(0, index - 1)
                 } label: {
                     Label("Previous", systemImage: "chevron.left")
                 }
@@ -43,7 +46,9 @@ struct StoryReaderView: View {
                 Spacer()
 
                 Button {
-                    index += 1
+                    if !chunks.isEmpty {
+                        index = min(chunks.count - 1, index + 1)
+                    }
                 } label: {
                     Label("Next", systemImage: "chevron.right")
                 }
@@ -51,7 +56,7 @@ struct StoryReaderView: View {
             }
             .padding(.horizontal, 24)
             .padding(.vertical, 12)
-            .background(.bar)
+            .background(theme.chrome.opacity(0.95))
         }
         .onAppear {
             chunks = store.chunks(for: story, translation: translation)
