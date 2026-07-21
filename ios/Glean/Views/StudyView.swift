@@ -5,6 +5,8 @@ struct StudyView: View {
     let store: ScriptureStore
     let translation: BibleTranslation
     @EnvironmentObject var readerSettings: ReaderSettings
+    @EnvironmentObject private var studyNavigator: StudyNavigator
+    @Environment(\.appTheme) private var theme
     @StateObject private var notesStore = NotesStore()
 
     @AppStorage("study.bookOrder") private var bookOrder = 1
@@ -13,6 +15,7 @@ struct StudyView: View {
     @State private var chapterVerses: [Verse] = []
     @State private var showPicker = false
     @State private var noteText = ""
+    @State private var lastJumpToken = 0
 
     private var bookName: String {
         chapterVerses.first?.book ?? ""
@@ -24,22 +27,24 @@ struct StudyView: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("\(bookName) \(chapter)")
-                            .font(.title3.weight(.semibold))
+                            .font(readerSettings.referenceFont(size: 20))
+                            .foregroundStyle(theme.primaryText)
                             .padding(.bottom, 4)
                         ForEach(chapterVerses) { v in
                             HStack(alignment: .top, spacing: 8) {
                                 Text("\(v.verse)")
-                                    .font(.caption.weight(.semibold))
-                                    .foregroundStyle(.secondary)
+                                    .font(readerSettings.referenceFont(size: 12))
+                                    .foregroundStyle(theme.secondaryText)
                                     .frame(width: 20, alignment: .trailing)
                                 Text(v.text)
                                     .font(readerSettings.bodyFont())
+                                    .foregroundStyle(theme.primaryText)
                             }
                             .id(v.verse)
                             .padding(6)
                             .background(
                                 v.verse == verse
-                                    ? RoundedRectangle(cornerRadius: 6).fill(Color.yellow.opacity(0.25))
+                                    ? RoundedRectangle(cornerRadius: 6).fill(theme.accent.opacity(0.22))
                                     : nil
                             )
                         }
@@ -98,15 +103,33 @@ struct StudyView: View {
                     }
             }
             .frame(height: 160)
+            .background(theme.chrome)
         }
+        .background(theme.background.ignoresSafeArea())
         .onAppear {
-            if chapterVerses.isEmpty { loadChapter() }
+            applyNavigatorIfNeeded(force: chapterVerses.isEmpty)
         }
         .onChange(of: translation) {
             loadChapter()
         }
         .onChange(of: verse) {
             noteText = notesStore.note(bookOrder: bookOrder, chapter: chapter, verse: verse)
+        }
+        .onChange(of: studyNavigator.jumpToken) {
+            applyNavigatorIfNeeded(force: true)
+        }
+    }
+
+    private func applyNavigatorIfNeeded(force: Bool) {
+        let token = studyNavigator.jumpToken
+        if force || token != lastJumpToken {
+            bookOrder = studyNavigator.bookOrder
+            chapter = studyNavigator.chapter
+            verse = studyNavigator.verse
+            lastJumpToken = token
+            loadChapter()
+        } else if chapterVerses.isEmpty {
+            loadChapter()
         }
     }
 
