@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glean Content Review</title>
+<style>
+  :root {
+    --bg: #f7f5f1;
+    --panel: #fffefb;
+    --edge: #e2ddd3;
+    --ink: #23201c;
+    --ink-2: #5d574e;
+    --ink-3: #8d857a;
+    --accent: #6b7f4a;
+    --accent-soft: #eef1e7;
+    --ok: #4a7c59;
+    --no: #a8443c;
+    --flag: #b8862b;
+    --shadow: 0 1px 2px rgba(35,32,28,.06), 0 8px 24px rgba(35,32,28,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181a;
+      --panel: #1e2124;
+      --edge: #2e3338;
+      --ink: #e8e6e2;
+      --ink-2: #a8a49d;
+      --ink-3: #726d66;
+      --accent: #9db877;
+      --accent-soft: #232a1e;
+      --ok: #7fb08a;
+      --no: #d4736a;
+      --flag: #d8ab55;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    padding: 12px 20px; background: var(--panel);
+    border-bottom: 1px solid var(--edge);
+  }
+  h1 { font-size: 15px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
+  .muted { color: var(--ink-2); }
+  .tiny { font-size: 12px; }
+  .spacer { flex: 1; }
+  button {
+    font: inherit; font-size: 13px; font-weight: 550;
+    padding: 7px 13px; border-radius: 7px;
+    border: 1px solid var(--edge); background: var(--panel); color: var(--ink);
+    cursor: pointer;
+  }
+  button:hover:not(:disabled) { border-color: var(--ink-3); }
+  button:disabled { opacity: .4; cursor: default; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.ok { color: var(--ok); border-color: var(--ok); }
+  button.no { color: var(--no); border-color: var(--no); }
+  button.flag { color: var(--flag); border-color: var(--flag); }
+  kbd {
+    font: 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    padding: 2px 5px; border: 1px solid var(--edge); border-radius: 4px;
+    background: var(--bg); color: var(--ink-3); margin-left: 6px;
+  }
+  main { max-width: 780px; margin: 0 auto; padding: 24px 20px 120px; }
+  .bar { height: 4px; background: var(--edge); border-radius: 2px; overflow: hidden; margin-bottom: 4px; }
+  .bar > div { height: 100%; background: var(--accent); transition: width .2s; }
+  .card {
+    background: var(--panel); border: 1px solid var(--edge); border-radius: 12px;
+    padding: 24px; box-shadow: var(--shadow); margin-bottom: 16px;
+  }
+  .meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+  .chip {
+    font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+    padding: 3px 8px; border-radius: 20px; background: var(--accent-soft); color: var(--accent);
+  }
+  .chip.warn { background: color-mix(in srgb, var(--flag) 15%, transparent); color: var(--flag); }
+  .ref { font-size: 12px; font-weight: 650; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); }
+  .body-text {
+    font: 20px/1.62 Palatino, "Palatino Linotype", Georgia, serif;
+    margin: 12px 0 0; white-space: pre-wrap; overflow-wrap: break-word;
+  }
+  textarea {
+    width: 100%; font: 16px/1.6 Palatino, Georgia, serif; color: var(--ink);
+    background: var(--bg); border: 1px solid var(--edge); border-radius: 8px;
+    padding: 12px; resize: vertical; min-height: 120px;
+  }
+  input[type=text] {
+    width: 100%; font: inherit; color: var(--ink);
+    background: var(--bg); border: 1px solid var(--edge); border-radius: 8px; padding: 9px 11px;
+  }
+  label.field { display: block; font-size: 12px; font-weight: 600; color: var(--ink-2); margin: 14px 0 5px; }
+  .kv { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: 12.5px; color: var(--ink-2); }
+  .kv dt { font-weight: 600; }
+  .kv dd { margin: 0; overflow-wrap: anywhere; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  footer {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: var(--panel); border-top: 1px solid var(--edge);
+    padding: 12px 20px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+    box-shadow: 0 -4px 16px rgba(0,0,0,.05);
+  }
+  .status { font-size: 12.5px; font-weight: 600; }
+  .status.approved { color: var(--ok); }
+  .status.rejected { color: var(--no); }
+  .status.flagged { color: var(--flag); }
+  .empty { text-align: center; padding: 80px 20px; color: var(--ink-2); }
+  .empty h2 { color: var(--ink); font-size: 20px; margin: 0 0 8px; }
+  .drop { border: 2px dashed var(--edge); border-radius: 14px; padding: 44px 20px; margin-top: 24px; }
+  .drop.over { border-color: var(--accent); background: var(--accent-soft); }
+  ul.help { margin: 10px 0 0; padding-left: 18px; font-size: 13px; color: var(--ink-2); line-height: 1.7; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Glean Content Review</h1>
+  <span id="fileLabel" class="tiny muted">no file loaded</span>
+  <span class="spacer"></span>
+  <button id="btnLoad">Open pack…</button>
+  <button id="btnExport" class="primary" disabled>Export reviewed JSON</button>
+  <input id="filePicker" type="file" accept="application/json,.json" class="hidden">
+</header>
+
+<main>
+  <section id="empty" class="empty">
+    <h2>Load a content pack to review</h2>
+    <p class="muted">Works entirely offline. Nothing leaves this machine.</p>
+    <div id="drop" class="drop">
+      <p style="margin:0 0 6px"><strong>Drop a .json pack here</strong></p>
+      <p class="tiny muted" style="margin:0">or use “Open pack…” above</p>
+      <ul class="help" style="text-align:left; max-width:520px; margin:18px auto 0">
+        <li><code>gleancommentary/Sources/GleanCommentary/Resources/notes.json</code></li>
+        <li><code>biblealgo/Sources/GleanSelection/Resources/chunks.json</code></li>
+        <li>or any JSON with a top-level array of items</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="review" class="hidden">
+    <div class="bar"><div id="progressFill" style="width:0%"></div></div>
+    <p class="tiny muted" id="progressText" style="margin:0 0 18px"></p>
+
+    <div class="card">
+      <div class="meta" id="chips"></div>
+      <div class="ref" id="itemRef"></div>
+      <div class="body-text" id="itemText"></div>
+
+      <label class="field hidden" id="editLabel" for="editBox">Edited text (saved with your decision)</label>
+      <textarea id="editBox" class="hidden"></textarea>
+
+      <label class="field" for="questionBox">Question or note for follow-up <span class="muted" style="font-weight:400">(optional; flagging saves this for a working session)</span></label>
+      <input id="questionBox" type="text" placeholder="e.g. is this actually verbatim Chrysostom? which homily?">
+    </div>
+
+    <div class="card">
+      <dl class="kv" id="rawMeta"></dl>
+    </div>
+  </section>
+</main>
+
+<footer id="footerBar" class="hidden">
+  <span class="status" id="decisionStatus">unreviewed</span>
+  <span class="spacer"></span>
+  <div class="actions">
+    <button id="btnPrev">◀ Prev<kbd>←</kbd></button>
+    <button class="ok" id="btnApprove">Approve<kbd>A</kbd></button>
+    <button class="no" id="btnReject">Reject<kbd>R</kbd></button>
+    <button class="flag" id="btnFlag">Flag &amp; ask<kbd>F</kbd></button>
+    <button id="btnEdit">Edit<kbd>E</kbd></button>
+    <button id="btnNext">Next ▶<kbd>→</kbd></button>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  const LS_KEY = "glean.review.session.v1";
+  let pack = null;        // original parsed JSON
+  let itemsKey = null;    // which top-level key held the array
+  let items = [];         // working copy
+  let idx = 0;
+  let fileName = "";
+
+  const $ = (id) => document.getElementById(id);
+
+  // ---- pack shape detection -------------------------------------------------
+  // Supports gleancommentary notes.json, biblealgo chunks.json, or any
+  // {someKey: [...]} / bare array. Keeps the original wrapper so export
+  // round-trips cleanly.
+  function detectItems(json) {
+    if (Array.isArray(json)) return { key: null, arr: json };
+    const preferred = ["notes", "chunks", "passages", "items", "shareLines", "characters"];
+    for (const k of preferred) {
+      if (Array.isArray(json[k])) return { key: k, arr: json[k] };
+    }
+    for (const k of Object.keys(json)) {
+      if (Array.isArray(json[k]) && json[k].length && typeof json[k][0] === "object") {
+        return { key: k, arr: json[k] };
+      }
+    }
+    return { key: null, arr: [] };
+  }
+
+  // Best-effort field mapping across pack types.
+  function refOf(it) {
+    return it.focusReference || it.reference || it.shareLineReference || it.title || it.id || "(no reference)";
+  }
+  function textOf(it) {
+    if (typeof it.reviewedText === "string") return it.reviewedText;
+    return it.text || it.shareLine || it.body || it.oneLine || "";
+  }
+  function chipsOf(it) {
+    const out = [];
+    if (it.sourceId) out.push({ t: it.sourceId, warn: false });
+    if (it.confidence) out.push({ t: it.confidence, warn: false });
+    if (it.translation) out.push({ t: it.translation, warn: false });
+    if (it.genre) out.push({ t: it.genre, warn: false });
+    // Provenance gap is the thing worth surfacing loudly during review.
+    const claimsAuthor = !!it.sourceId;
+    const hasLocator = !!(it.locator || it.citation || it.verbatim === true);
+    if (claimsAuthor && !hasLocator) out.push({ t: "no locator", warn: true });
+    return out;
+  }
+
+  // ---- rendering ------------------------------------------------------------
+  function render() {
+    if (!items.length) return;
+    idx = Math.max(0, Math.min(idx, items.length - 1));
+    const it = items[idx];
+
+    $("itemRef").textContent = refOf(it);
+    $("itemText").textContent = textOf(it);
+
+    const chipBox = $("chips");
+    chipBox.innerHTML = "";
+    chipsOf(it).forEach(c => {
+      const s = document.createElement("span");
+      s.className = "chip" + (c.warn ? " warn" : "");
+      s.textContent = c.t;
+      chipBox.appendChild(s);
+    });
+
+    $("questionBox").value = it.reviewNote || "";
+
+    const editing = !$("editBox").classList.contains("hidden");
+    if (editing) $("editBox").value = textOf(it);
+
+    // raw fields, minus the ones already shown big
+    const dl = $("rawMeta");
+    dl.innerHTML = "";
+    Object.keys(it).forEach(k => {
+      if (["text", "reviewedText", "reviewNote"].includes(k)) return;
+      const dt = document.createElement("dt"); dt.textContent = k;
+      const dd = document.createElement("dd");
+      dd.textContent = typeof it[k] === "object" ? JSON.stringify(it[k]) : String(it[k]);
+      dl.append(dt, dd);
+    });
+
+    const st = $("decisionStatus");
+    const d = it.reviewDecision || "unreviewed";
+    st.textContent = d + (it.reviewedText ? " (edited)" : "");
+    st.className = "status " + (d === "approved" ? "approved" : d === "rejected" ? "rejected" : d === "flagged" ? "flagged" : "");
+
+    const done = items.filter(x => x.reviewDecision).length;
+    $("progressFill").style.width = (done / items.length * 100) + "%";
+    $("progressText").textContent =
+      `Item ${idx + 1} of ${items.length} · ${done} reviewed · ` +
+      `${items.filter(x => x.reviewDecision === "approved").length} approved · ` +
+      `${items.filter(x => x.reviewDecision === "flagged").length} flagged`;
+
+    $("btnPrev").disabled = idx === 0;
+    $("btnNext").disabled = idx === items.length - 1;
+    save();
+  }
+
+  function commitQuestion() {
+    const it = items[idx];
+    const q = $("questionBox").value.trim();
+    if (q) it.reviewNote = q; else delete it.reviewNote;
+  }
+
+  function commitEditIfOpen() {
+    const box = $("editBox");
+    if (box.classList.contains("hidden")) return;
+    const it = items[idx];
+    const v = box.value;
+    const original = it.text || it.shareLine || it.body || "";
+    if (v !== original) it.reviewedText = v; else delete it.reviewedText;
+  }
+
+  function decide(decision) {
+    commitQuestion();
+    commitEditIfOpen();
+    const it = items[idx];
+    it.reviewDecision = decision;
+    it.reviewedAt = new Date().toISOString().slice(0, 10);
+    closeEdit();
+    if (idx < items.length - 1) { idx++; }
+    render();
+  }
+
+  function openEdit() {
+    $("editBox").classList.remove("hidden");
+    $("editLabel").classList.remove("hidden");
+    $("editBox").value = textOf(items[idx]);
+    $("editBox").focus();
+  }
+  function closeEdit() {
+    $("editBox").classList.add("hidden");
+    $("editLabel").classList.add("hidden");
+  }
+
+  // ---- persistence ----------------------------------------------------------
+  function save() {
+    try {
+      localStorage.setItem(LS_KEY, JSON.stringify({ fileName, itemsKey, items, idx, pack }));
+    } catch (e) { /* quota; not fatal for a review session */ }
+  }
+
+  function restore() {
+    try {
+      const raw = localStorage.getItem(LS_KEY);
+      if (!raw) return false;
+      const s = JSON.parse(raw);
+      if (!s.items || !s.items.length) return false;
+      ({ fileName, itemsKey, items, idx, pack } = s);
+      showReview();
+      return true;
+    } catch (e) { return false; }
+  }
+
+  function showReview() {
+    $("empty").classList.add("hidden");
+    $("review").classList.remove("hidden");
+    $("footerBar").classList.remove("hidden");
+    $("btnExport").disabled = false;
+    $("fileLabel").textContent = fileName + " · " + items.length + " items";
+    render();
+  }
+
+  // ---- load / export --------------------------------------------------------
+  function loadText(txt, name) {
+    let json;
+    try { json = JSON.parse(txt); }
+    catch (e) { alert("That file isn't valid JSON:\n\n" + e.message); return; }
+    const found = detectItems(json);
+    if (!found.arr.length) { alert("Couldn't find an array of items in that JSON."); return; }
+    pack = json; itemsKey = found.key;
+    items = JSON.parse(JSON.stringify(found.arr));
+    idx = 0; fileName = name;
+    showReview();
+  }
+
+  function exportJSON() {
+    commitQuestion(); commitEditIfOpen();
+    let out;
+    if (itemsKey === null) out = items;
+    else { out = JSON.parse(JSON.stringify(pack)); out[itemsKey] = items; }
+    const blob = new Blob([JSON.stringify(out, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = fileName.replace(/\.json$/, "") + ".reviewed.json";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  // ---- wiring ---------------------------------------------------------------
+  $("btnLoad").onclick = () => $("filePicker").click();
+  $("filePicker").onchange = (e) => {
+    const f = e.target.files[0];
+    if (!f) return;
+    f.text().then(t => loadText(t, f.name));
+  };
+  $("btnExport").onclick = exportJSON;
+  $("btnApprove").onclick = () => decide("approved");
+  $("btnReject").onclick  = () => decide("rejected");
+  $("btnFlag").onclick    = () => decide("flagged");
+  $("btnEdit").onclick    = () => {
+    if ($("editBox").classList.contains("hidden")) openEdit(); else { commitEditIfOpen(); closeEdit(); render(); }
+  };
+  $("btnPrev").onclick = () => { commitQuestion(); commitEditIfOpen(); closeEdit(); idx--; render(); };
+  $("btnNext").onclick = () => { commitQuestion(); commitEditIfOpen(); closeEdit(); idx++; render(); };
+  $("questionBox").onblur = () => { commitQuestion(); render(); };
+
+  const drop = $("drop");
+  ["dragenter", "dragover"].forEach(ev =>
+    drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add("over"); }));
+  ["dragleave", "drop"].forEach(ev =>
+    drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove("over"); }));
+  drop.addEventListener("drop", e => {
+    const f = e.dataTransfer.files[0];
+    if (f) f.text().then(t => loadText(t, f.name));
+  });
+
+  // Keyboard-first: review throughput is the whole point of this tool.
+  document.addEventListener("keydown", (e) => {
+    const typing = ["INPUT", "TEXTAREA"].includes(document.activeElement.tagName);
+    if (typing && e.key !== "Escape") return;
+    if (!items.length) return;
+    const k = e.key.toLowerCase();
+    if (k === "a") { e.preventDefault(); decide("approved"); }
+    else if (k === "r") { e.preventDefault(); decide("rejected"); }
+    else if (k === "f") { e.preventDefault(); decide("flagged"); }
+    else if (k === "e") { e.preventDefault(); openEdit(); }
+    else if (e.key === "ArrowLeft" && idx > 0) { e.preventDefault(); commitQuestion(); closeEdit(); idx--; render(); }
+    else if (e.key === "ArrowRight" && idx < items.length - 1) { e.preventDefault(); commitQuestion(); closeEdit(); idx++; render(); }
+    else if (e.key === "Escape") { closeEdit(); document.activeElement.blur(); render(); }
+  });
+
+  restore();
+})();
+</script>
+</body>
+</html>
