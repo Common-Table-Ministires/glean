@@ -1,22 +1,52 @@
 import SwiftUI
 import ScriptureCore
+import GleanSelection
 
 struct ChunkCardView: View {
-    let chunk: Chunk
+    let passage: FeedPassage
     @EnvironmentObject var readerSettings: ReaderSettings
+    @Environment(\.appTheme) private var theme
+
+    init(passage: FeedPassage) {
+        self.passage = passage
+    }
+
+    init(chunk: Chunk) {
+        self.passage = FeedPassage(
+            id: "core.\(chunk.book).\(chunk.chapter).\(chunk.verseRange.lowerBound)-\(chunk.verseRange.upperBound)",
+            reference: chunk.reference,
+            text: chunk.text,
+            verseCount: chunk.verses.count,
+            wordCount: chunk.text.split(whereSeparator: \.isWhitespace).count,
+            translation: chunk.translation
+        )
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text(chunk.reference.uppercased())
-                .font(.system(.caption, design: .rounded).weight(.semibold))
-                .foregroundStyle(.secondary)
-            Text(chunk.text)
+            Text(passage.focusReference.uppercased())
+                .font(readerSettings.referenceFont(size: 12))
+                .foregroundStyle(theme.secondaryText)
+            Text(passage.focusText)
                 .font(readerSettings.bodyFont())
+                .foregroundStyle(theme.primaryText)
                 .lineSpacing(readerSettings.bodyFontSize * 0.3)
                 .fixedSize(horizontal: false, vertical: true)
-            Text("\(chunk.verses.count) verse\(chunk.verses.count == 1 ? "" : "s"), \(chunk.text.split(separator: " ").count) words")
+            if passage.hasContext {
+                Text(passage.reference)
+                    .font(.caption2)
+                    .foregroundStyle(theme.tertiaryText)
+            }
+            let verseLabel = passage.verseCount == 1 ? "verse" : "verses"
+            let meta: String = {
+                if passage.verseCount > 0 {
+                    return "\(passage.verseCount) \(verseLabel), \(passage.wordCount) words"
+                }
+                return "\(passage.wordCount) words"
+            }()
+            Text(meta)
                 .font(.caption)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(theme.tertiaryText)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
