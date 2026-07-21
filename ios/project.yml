@@ -4,14 +4,11 @@ options:
   deploymentTarget:
     iOS: "17.0"
 packages:
-  ScriptureCore:
+  # One local package at the repo root provides all three libraries.
+  # Boundaries are enforced by Swift modules, not by separate repos;
+  # see docs/05-package-boundaries.md.
+  Glean:
     path: ../
-  # Integrity: selection brain is a sibling package, never vendored into Glean sources.
-  GleanSelection:
-    path: ../../../Desktop/biblealgo
-  # Integrity: open commentary pack — not copied into app sources.
-  GleanCommentary:
-    path: ../../gleancommentary
 targets:
   Glean:
     type: application
@@ -21,11 +18,11 @@ targets:
     resources:
       - path: Glean/Resources
     dependencies:
-      - package: ScriptureCore
+      - package: Glean
         product: ScriptureCore
-      - package: GleanSelection
+      - package: Glean
         product: GleanSelection
-      - package: GleanCommentary
+      - package: Glean
         product: GleanCommentary
       - sdk: libsqlite3.tbd
     settings:

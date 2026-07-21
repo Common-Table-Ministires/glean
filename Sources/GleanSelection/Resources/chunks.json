@@ -1,0 +1,1285 @@
+{
+  "version": 1,
+  "translation": "BSB",
+  "count": 64,
+  "chunks": [
+    {
+      "id": "GEN.1.1-5",
+      "reference": "Genesis 1:1-5",
+      "text": "In the beginning God created the heavens and the earth. Now the earth was formless and void, and darkness was over the surface of the deep. And the Spirit of God was hovering over the surface of the waters. And God said, “Let there be light,” and there was light. And God saw that the light was good, and He separated the light from the darkness. God called the light “day,” and the darkness He called “night.” And there was evening, and there was morning—the first day.",
+      "book": "Genesis",
+      "displayBook": "Genesis",
+      "chapter": 1,
+      "startVerse": 1,
+      "endVerse": 5,
+      "genre": "torah",
+      "testament": "OT",
+      "themes": [
+        "creation",
+        "identity"
+      ],
+      "canonicalOrder": 1001001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "GEN.1.26-28",
+      "reference": "Genesis 1:26-28",
+      "text": "Then God said, “Let Us make man in Our image, after Our likeness, to rule over the fish of the sea and the birds of the air, over the livestock, and over all the earth itself and every creature that crawls upon it.” So God created man in His own image; in the image of God He created him; male and female He created them. God blessed them and said to them, “Be fruitful and multiply, and fill the earth and subdue it; rule over the fish of the sea and the birds of the air and every creature that crawls upon the earth.”",
+      "book": "Genesis",
+      "displayBook": "Genesis",
+      "chapter": 1,
+      "startVerse": 26,
+      "endVerse": 28,
+      "genre": "torah",
+      "testament": "OT",
+      "themes": [
+        "creation",
+        "identity",
+        "kingdom"
+      ],
+      "canonicalOrder": 1001026,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "GEN.12.1-4",
+      "reference": "Genesis 12:1-4",
+      "text": "Then the LORD said to Abram, “Leave your country, your kindred, and your father’s household, and go to the land I will show you. I will make you into a great nation, and I will bless you; I will make your name great, so that you will be a blessing. I will bless those who bless you and curse those who curse you; and all the families of the earth will be blessed through you.” So Abram departed, as the LORD had directed him, and Lot went with him. Abram was seventy-five years old when he left Haran.",
+      "book": "Genesis",
+      "displayBook": "Genesis",
+      "chapter": 12,
+      "startVerse": 1,
+      "endVerse": 4,
+      "genre": "torah",
+      "testament": "OT",
+      "themes": [
+        "faith",
+        "identity",
+        "hope"
+      ],
+      "canonicalOrder": 1012001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "EXO.3.1-6",
+      "reference": "Exodus 3:1-6",
+      "text": "Meanwhile, Moses was shepherding the flock of his father-in-law Jethro, the priest of Midian. He led the flock to the far side of the wilderness and came to Horeb, the mountain of God. There the angel of the LORD appeared to him in a blazing fire from within a bush. Moses saw the bush ablaze with fire, but it was not consumed. So Moses thought, “I must go over and see this marvelous sight. Why is the bush not burning up?” When the LORD saw that he had gone over to look, God called out to him from within the bush, “Moses, Moses!” “Here I am,” he answered. “Do not come any closer,” God said. “Take off your sandals, for the place where you are standing is holy ground.” Then He said, “I am the God of your father, the God of Abraham, the God of Isaac, and the God of Jacob.” At this, Moses hid his face, for he was afraid to look at God.",
+      "book": "Exodus",
+      "displayBook": "Exodus",
+      "chapter": 3,
+      "startVerse": 1,
+      "endVerse": 6,
+      "genre": "torah",
+      "testament": "OT",
+      "themes": [
+        "identity",
+        "faith",
+        "wisdom"
+      ],
+      "canonicalOrder": 2003001,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "EXO.14.13-14",
+      "reference": "Exodus 14:13-14",
+      "text": "But Moses told the people, “Do not be afraid. Stand firm and you will see the LORD’s salvation, which He will accomplish for you today; for the Egyptians you see today, you will never see again. The LORD will fight for you; you need only to be still.”",
+      "book": "Exodus",
+      "displayBook": "Exodus",
+      "chapter": 14,
+      "startVerse": 13,
+      "endVerse": 14,
+      "genre": "torah",
+      "testament": "OT",
+      "themes": [
+        "hope",
+        "faith",
+        "peace"
+      ],
+      "canonicalOrder": 2014013,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "DEU.6.4-9",
+      "reference": "Deuteronomy 6:4-9",
+      "text": "Hear, O Israel: The LORD our God, the LORD is One. And you shall love the LORD your God with all your heart and with all your soul and with all your strength. These words I am commanding you today are to be upon your hearts. And you shall teach them diligently to your children and speak of them when you sit at home and when you walk along the road, when you lie down and when you get up. Tie them as reminders on your hands and bind them on your foreheads. Write them on the doorposts of your houses and on your gates.",
+      "book": "Deuteronomy",
+      "displayBook": "Deuteronomy",
+      "chapter": 6,
+      "startVerse": 4,
+      "endVerse": 9,
+      "genre": "torah",
+      "testament": "OT",
+      "themes": [
+        "love",
+        "wisdom",
+        "identity"
+      ],
+      "canonicalOrder": 5006004,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "RUT.1.16-17",
+      "reference": "Ruth 1:16-17",
+      "text": "But Ruth replied: “Do not urge me to leave you or to turn from following you. For wherever you go, I will go, and wherever you live, I will live; your people will be my people, and your God will be my God. Where you die, I will die, and there I will be buried. May the LORD punish me, and ever so severely, if anything but death separates you and me.”",
+      "book": "Ruth",
+      "displayBook": "Ruth",
+      "chapter": 1,
+      "startVerse": 16,
+      "endVerse": 17,
+      "genre": "historical",
+      "testament": "OT",
+      "themes": [
+        "love",
+        "faith",
+        "identity"
+      ],
+      "canonicalOrder": 8001016,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "1SA.16.6-13",
+      "reference": "1 Samuel 16:6-13",
+      "text": "When they arrived, Samuel saw Eliab and said, “Surely here before the LORD is His anointed.” But the LORD said to Samuel, “Do not consider his appearance or height, for I have rejected him; the LORD does not see as man does. For man sees the outward appearance, but the LORD sees the heart.” Then Jesse called Abinadab and presented him to Samuel, who said, “The LORD has not chosen this one either.” Next Jesse presented Shammah, but Samuel said, “The LORD has not chosen this one either.” Thus Jesse made seven of his sons pass before Samuel, but Samuel told him, “The LORD has not chosen any of these.” And Samuel asked him, “Are these all the sons you have?” “There is still the youngest,” Jesse replied, “but he is tending the sheep.” “Send for him,” Samuel replied. “For we will not sit down to eat until he arrives.” So Jesse sent for his youngest son and brought him in. He was ruddy, with beautiful eyes and a handsome appearance. And the LORD said, “Rise and anoint him, for he is the one.” So Samuel took the horn of oil and anointed him in the presence of his brothers, and the Spirit of the LORD rushed upon David from that day forward. Then Samuel set out and went to Ramah.",
+      "book": "I Samuel",
+      "displayBook": "1 Samuel",
+      "chapter": 16,
+      "startVerse": 6,
+      "endVerse": 13,
+      "genre": "historical",
+      "testament": "OT",
+      "themes": [
+        "identity",
+        "wisdom"
+      ],
+      "canonicalOrder": 9016006,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "1KI.19.9-13",
+      "reference": "1 Kings 19:9-13",
+      "text": "There Elijah entered a cave and spent the night. And the word of the LORD came to him, saying, “What are you doing here, Elijah?” “I have been very zealous for the LORD, the God of Hosts,” he replied, “but the Israelites have forsaken Your covenant, torn down Your altars, and killed Your prophets with the sword. I am the only one left, and they are seeking my life as well.” Then the LORD said, “Go out and stand on the mountain before the LORD. Behold, the LORD is about to pass by.” And a great and mighty wind tore into the mountains and shattered the rocks before the LORD, but the LORD was not in the wind. After the wind there was an earthquake, but the LORD was not in the earthquake. After the earthquake there was a fire, but the LORD was not in the fire. And after the fire came a still, small voice. When Elijah heard it, he wrapped his face in his cloak and went out and stood at the mouth of the cave. Suddenly a voice came to him and said, “What are you doing here, Elijah?”",
+      "book": "I Kings",
+      "displayBook": "1 Kings",
+      "chapter": 19,
+      "startVerse": 9,
+      "endVerse": 13,
+      "genre": "historical",
+      "testament": "OT",
+      "themes": [
+        "suffering",
+        "peace",
+        "prayer"
+      ],
+      "canonicalOrder": 11019009,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "NEH.8.8-10",
+      "reference": "Nehemiah 8:8-10",
+      "text": "So they read from the Book of the Law of God, explaining it and giving insight, so that the people could understand what was being read. Nehemiah the governor, Ezra the priest and scribe, and the Levites who were instructing the people said to all of them, “This day is holy to the LORD your God. Do not mourn or weep.” For all the people were weeping as they heard the words of the Law. Then Nehemiah told them, “Go and eat what is rich, drink what is sweet, and send out portions to those who have nothing prepared, since today is holy to our Lord. Do not grieve, for the joy of the LORD is your strength.”",
+      "book": "Nehemiah",
+      "displayBook": "Nehemiah",
+      "chapter": 8,
+      "startVerse": 8,
+      "endVerse": 10,
+      "genre": "historical",
+      "testament": "OT",
+      "themes": [
+        "joy",
+        "wisdom",
+        "identity"
+      ],
+      "canonicalOrder": 16008008,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "JOB.1.20-22",
+      "reference": "Job 1:20-22",
+      "text": "Then Job stood up, tore his robe, and shaved his head. He fell to the ground and worshiped, saying: “Naked I came from my mother’s womb, and naked I will return. The LORD gave, and the LORD has taken away. Blessed be the name of the LORD.” In all this, Job did not sin or charge God with wrongdoing.",
+      "book": "Job",
+      "displayBook": "Job",
+      "chapter": 1,
+      "startVerse": 20,
+      "endVerse": 22,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "suffering",
+        "faith",
+        "identity"
+      ],
+      "canonicalOrder": 18001020,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "JOB.19.23-27",
+      "reference": "Job 19:23-27",
+      "text": "I wish that my words were recorded and inscribed in a book, by an iron stylus on lead, or chiseled in stone forever. But I know that my Redeemer lives, and in the end He will stand upon the earth. Even after my skin has been destroyed, yet in my flesh I will see God. I will see Him for myself; my eyes will behold Him, and not as a stranger. How my heart yearns within me!",
+      "book": "Job",
+      "displayBook": "Job",
+      "chapter": 19,
+      "startVerse": 23,
+      "endVerse": 27,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "hope",
+        "suffering",
+        "faith"
+      ],
+      "canonicalOrder": 18019023,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "PSA.1.1-6",
+      "reference": "Psalms 1:1-6",
+      "text": "Blessed is the man who does not walk in the counsel of the wicked, or set foot on the path of sinners, or sit in the seat of mockers. But his delight is in the Law of the LORD, and on His law he meditates day and night. He is like a tree planted by streams of water, yielding its fruit in season, whose leaf does not wither, and who prospers in all he does. Not so the wicked! For they are like chaff driven off by the wind. Therefore the wicked will not stand in the judgment, nor sinners in the assembly of the righteous. For the LORD guards the path of the righteous, but the way of the wicked will perish.",
+      "book": "Psalms",
+      "displayBook": "Psalms",
+      "chapter": 1,
+      "startVerse": 1,
+      "endVerse": 6,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "wisdom",
+        "identity",
+        "justice"
+      ],
+      "canonicalOrder": 19001001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "PSA.23.1-6",
+      "reference": "Psalms 23:1-6",
+      "text": "A Psalm of David. The LORD is my shepherd; I shall not want. He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul; He guides me in the paths of righteousness for the sake of His name. Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me; Your rod and Your staff, they comfort me. You prepare a table before me in the presence of my enemies. You anoint my head with oil; my cup overflows. Surely goodness and mercy will follow me all the days of my life, and I will dwell in the house of the LORD forever.",
+      "book": "Psalms",
+      "displayBook": "Psalms",
+      "chapter": 23,
+      "startVerse": 1,
+      "endVerse": 6,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "hope",
+        "peace",
+        "faith"
+      ],
+      "canonicalOrder": 19023001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "PSA.27.1-5",
+      "reference": "Psalms 27:1-5",
+      "text": "Of David. The LORD is my light and my salvation— whom shall I fear? The LORD is the stronghold of my life— whom shall I dread? When the wicked came upon me to devour my flesh, my enemies and foes stumbled and fell. Though an army encamps around me, my heart will not fear; though a war breaks out against me, I will keep my trust. One thing I have asked of the LORD; this is what I desire: to dwell in the house of the LORD all the days of my life, to gaze on the beauty of the LORD and seek Him in His temple. For in the day of trouble He will hide me in His shelter; He will conceal me under the cover of His tent; He will set me high upon a rock.",
+      "book": "Psalms",
+      "displayBook": "Psalms",
+      "chapter": 27,
+      "startVerse": 1,
+      "endVerse": 5,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "hope",
+        "faith",
+        "peace"
+      ],
+      "canonicalOrder": 19027001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "PSA.46.1-11",
+      "reference": "Psalms 46:1-11",
+      "text": "For the choirmaster. Of the sons of Korah. According to Alamoth. A song. God is our refuge and strength, an ever-present help in times of trouble. Therefore we will not fear, though the earth is transformed and the mountains are toppled into the depths of the seas, though their waters roar and foam and the mountains quake in the surge. Selah There is a river whose streams delight the city of God, the holy place where the Most High dwells. God is within her; she will not be moved. God will help her when morning dawns. Nations rage, kingdoms crumble; the earth melts when He lifts His voice. The LORD of Hosts is with us; the God of Jacob is our fortress. Selah Come, see the works of the LORD, who brings devastation upon the earth. He makes wars to cease throughout the earth; He breaks the bow and shatters the spear; He burns the shields in the fire. “Be still and know that I am God; I will be exalted among the nations, I will be exalted over the earth.” The LORD of Hosts is with us; the God of Jacob is our fortress. Selah",
+      "book": "Psalms",
+      "displayBook": "Psalms",
+      "chapter": 46,
+      "startVerse": 1,
+      "endVerse": 11,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "peace",
+        "hope",
+        "identity"
+      ],
+      "canonicalOrder": 19046001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "PSA.51.1-12",
+      "reference": "Psalms 51:1-12",
+      "text": "For the choirmaster. A Psalm of David. When Nathan the prophet came to him after his adultery with Bathsheba. Have mercy on me, O God, according to Your loving devotion; according to Your great compassion, blot out my transgressions. Wash me clean of my iniquity and cleanse me from my sin. For I know my transgressions, and my sin is always before me. Against You, You only, have I sinned and done what is evil in Your sight, so that You may be proved right when You speak and blameless when You judge. Surely I was brought forth in iniquity; I was sinful when my mother conceived me. Surely You desire truth in the inmost being; You teach me wisdom in the inmost place. Purify me with hyssop, and I will be clean; wash me, and I will be whiter than snow. Let me hear joy and gladness; let the bones You have crushed rejoice. Hide Your face from my sins and blot out all my iniquities. Create in me a clean heart, O God, and renew a right spirit within me. Cast me not away from Your presence; take not Your Holy Spirit from me. Restore to me the joy of Your salvation, and sustain me with a willing spirit.",
+      "book": "Psalms",
+      "displayBook": "Psalms",
+      "chapter": 51,
+      "startVerse": 1,
+      "endVerse": 12,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "repentance",
+        "prayer",
+        "identity"
+      ],
+      "canonicalOrder": 19051001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "PSA.121.1-8",
+      "reference": "Psalms 121:1-8",
+      "text": "A song of ascents. I lift up my eyes to the hills. From where does my help come? My help comes from the LORD, the Maker of heaven and earth. He will not allow your foot to slip; your Protector will not slumber. Behold, the Protector of Israel will neither slumber nor sleep. The LORD is your keeper; the LORD is the shade on your right hand. The sun will not strike you by day, nor the moon by night. The LORD will guard you from all evil; He will preserve your soul. The LORD will watch over your coming and going, both now and forevermore.",
+      "book": "Psalms",
+      "displayBook": "Psalms",
+      "chapter": 121,
+      "startVerse": 1,
+      "endVerse": 8,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "hope",
+        "peace",
+        "faith"
+      ],
+      "canonicalOrder": 19121001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "PSA.139.1-14",
+      "reference": "Psalms 139:1-14",
+      "text": "For the choirmaster. A Psalm of David. O LORD, You have searched me and known me. You know when I sit and when I rise; You understand my thoughts from afar. You search out my path and my lying down; You are aware of all my ways. Even before a word is on my tongue, You know all about it, O LORD. You hem me in behind and before; You have laid Your hand upon me. Such knowledge is too wonderful for me, too lofty for me to attain. Where can I go to escape Your Spirit? Where can I flee from Your presence? If I ascend to the heavens, You are there; if I make my bed in Sheol, You are there. If I rise on the wings of the dawn, if I settle by the farthest sea, even there Your hand will guide me; Your right hand will hold me fast. If I say, “Surely the darkness will hide me, and the light become night around me”— even the darkness is not dark to You, but the night shines like the day, for darkness is as light to You. For You formed my inmost being; You knit me together in my mother’s womb. I praise You, for I am fearfully and wonderfully made. Marvelous are Your works, and I know this very well.",
+      "book": "Psalms",
+      "displayBook": "Psalms",
+      "chapter": 139,
+      "startVerse": 1,
+      "endVerse": 14,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "identity",
+        "creation",
+        "love"
+      ],
+      "canonicalOrder": 19139001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "PRO.3.5-8",
+      "reference": "Proverbs 3:5-8",
+      "text": "Trust in the LORD with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He will make your paths straight. Be not wise in your own eyes; fear the LORD and turn away from evil. This will bring healing to your body and refreshment to your bones.",
+      "book": "Proverbs",
+      "displayBook": "Proverbs",
+      "chapter": 3,
+      "startVerse": 5,
+      "endVerse": 8,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "wisdom",
+        "faith",
+        "peace"
+      ],
+      "canonicalOrder": 20003005,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "ECC.3.1-8",
+      "reference": "Ecclesiastes 3:1-8",
+      "text": "To everything there is a season, and a time for every purpose under heaven: a time to be born and a time to die, a time to plant and a time to uproot, a time to kill and a time to heal, a time to break down and a time to build, a time to weep and a time to laugh, a time to mourn and a time to dance, a time to cast away stones and a time to gather stones together, a time to embrace and a time to refrain from embracing, a time to search and a time to count as lost, a time to keep and a time to discard, a time to tear and a time to mend, a time to be silent and a time to speak, a time to love and a time to hate, a time for war and a time for peace.",
+      "book": "Ecclesiastes",
+      "displayBook": "Ecclesiastes",
+      "chapter": 3,
+      "startVerse": 1,
+      "endVerse": 8,
+      "genre": "wisdom",
+      "testament": "OT",
+      "themes": [
+        "wisdom",
+        "suffering",
+        "peace"
+      ],
+      "canonicalOrder": 21003001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "ISA.40.28-31",
+      "reference": "Isaiah 40:28-31",
+      "text": "Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary; His understanding is beyond searching out. He gives power to the faint and increases the strength of the weak. Even youths grow tired and weary, and young men stumble and fall. But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint.",
+      "book": "Isaiah",
+      "displayBook": "Isaiah",
+      "chapter": 40,
+      "startVerse": 28,
+      "endVerse": 31,
+      "genre": "prophets",
+      "testament": "OT",
+      "themes": [
+        "hope",
+        "suffering",
+        "faith"
+      ],
+      "canonicalOrder": 23040028,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "ISA.43.1-3",
+      "reference": "Isaiah 43:1-3",
+      "text": "Now this is what the LORD says— He who created you, O Jacob, and He who formed you, O Israel: “Do not fear, for I have redeemed you; I have called you by your name; you are Mine! When you pass through the waters, I will be with you; and when you go through the rivers, they will not overwhelm you. When you walk through the fire, you will not be scorched; the flames will not set you ablaze. For I am the LORD your God, the Holy One of Israel, your Savior; I give Egypt for your ransom, Cush and Seba in your place.",
+      "book": "Isaiah",
+      "displayBook": "Isaiah",
+      "chapter": 43,
+      "startVerse": 1,
+      "endVerse": 3,
+      "genre": "prophets",
+      "testament": "OT",
+      "themes": [
+        "identity",
+        "hope",
+        "love"
+      ],
+      "canonicalOrder": 23043001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "ISA.53.3-6",
+      "reference": "Isaiah 53:3-6",
+      "text": "He was despised and rejected by men, a man of sorrows, acquainted with grief. Like one from whom men hide their faces, He was despised, and we esteemed Him not. Surely He took on our infirmities and carried our sorrows; yet we considered Him stricken by God, struck down and afflicted. But He was pierced for our transgressions, He was crushed for our iniquities; the punishment that brought us peace was upon Him, and by His stripes we are healed. We all like sheep have gone astray, each one has turned to his own way; and the LORD has laid upon Him the iniquity of us all.",
+      "book": "Isaiah",
+      "displayBook": "Isaiah",
+      "chapter": 53,
+      "startVerse": 3,
+      "endVerse": 6,
+      "genre": "prophets",
+      "testament": "OT",
+      "themes": [
+        "suffering",
+        "repentance",
+        "hope"
+      ],
+      "canonicalOrder": 23053003,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "ISA.55.1-3",
+      "reference": "Isaiah 55:1-3",
+      "text": "“Come, all you who are thirsty, come to the waters; and you without money, come, buy, and eat! Come, buy wine and milk without money and without cost! Why spend money on that which is not bread, and your labor on that which does not satisfy? Listen carefully to Me, and eat what is good, and your soul will delight in the richest of foods. Incline your ear and come to Me; listen, so that your soul may live. I will make with you an everlasting covenant— My loving devotion promised to David.",
+      "book": "Isaiah",
+      "displayBook": "Isaiah",
+      "chapter": 55,
+      "startVerse": 1,
+      "endVerse": 3,
+      "genre": "prophets",
+      "testament": "OT",
+      "themes": [
+        "hope",
+        "peace",
+        "kingdom"
+      ],
+      "canonicalOrder": 23055001,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "JER.29.11-14",
+      "reference": "Jeremiah 29:11-14",
+      "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope. Then you will call upon Me and come and pray to Me, and I will listen to you. You will seek Me and find Me when you search for Me with all your heart. I will be found by you, declares the LORD, and I will restore you from captivity and gather you from all the nations and places to which I have banished you, declares the LORD. I will restore you to the place from which I sent you into exile.”",
+      "book": "Jeremiah",
+      "displayBook": "Jeremiah",
+      "chapter": 29,
+      "startVerse": 11,
+      "endVerse": 14,
+      "genre": "prophets",
+      "testament": "OT",
+      "themes": [
+        "hope",
+        "prayer",
+        "identity"
+      ],
+      "canonicalOrder": 24029011,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "LAM.3.21-26",
+      "reference": "Lamentations 3:21-26",
+      "text": "Yet I call this to mind, and therefore I have hope: Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness! “The LORD is my portion,” says my soul, “therefore I will hope in Him.” The LORD is good to those who wait for Him, to the soul who seeks Him. It is good to wait quietly for the salvation of the LORD.",
+      "book": "Lamentations",
+      "displayBook": "Lamentations",
+      "chapter": 3,
+      "startVerse": 21,
+      "endVerse": 26,
+      "genre": "prophets",
+      "testament": "OT",
+      "themes": [
+        "hope",
+        "suffering",
+        "faith"
+      ],
+      "canonicalOrder": 25003021,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "MIC.6.6-8",
+      "reference": "Micah 6:6-8",
+      "text": "With what shall I come before the LORD when I bow before the God on high? Should I come to Him with burnt offerings, with year-old calves? Would the LORD be pleased with thousands of rams, with ten thousand rivers of oil? Shall I present my firstborn for my transgression, the fruit of my body for the sin of my soul? He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?",
+      "book": "Micah",
+      "displayBook": "Micah",
+      "chapter": 6,
+      "startVerse": 6,
+      "endVerse": 8,
+      "genre": "prophets",
+      "testament": "OT",
+      "themes": [
+        "justice",
+        "wisdom",
+        "love"
+      ],
+      "canonicalOrder": 33006006,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "HAB.3.17-19",
+      "reference": "Habakkuk 3:17-19",
+      "text": "Though the fig tree does not bud and no fruit is on the vines, though the olive crop fails and the fields produce no food, though the sheep are cut off from the fold and no cattle are in the stalls, yet I will exult in the LORD; I will rejoice in the God of my salvation! GOD the Lord is my strength; He makes my feet like those of a deer; He makes me walk upon the heights! For the choirmaster. With stringed instruments.",
+      "book": "Habakkuk",
+      "displayBook": "Habakkuk",
+      "chapter": 3,
+      "startVerse": 17,
+      "endVerse": 19,
+      "genre": "prophets",
+      "testament": "OT",
+      "themes": [
+        "faith",
+        "joy",
+        "suffering"
+      ],
+      "canonicalOrder": 35003017,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "MAT.5.1-12",
+      "reference": "Matthew 5:1-12",
+      "text": "When Jesus saw the crowds, He went up on the mountain and sat down. His disciples came to Him, and He began to teach them, saying: “Blessed are the poor in spirit, for theirs is the kingdom of heaven. Blessed are those who mourn, for they will be comforted. Blessed are the meek, for they will inherit the earth. Blessed are those who hunger and thirst for righteousness, for they will be filled. Blessed are the merciful, for they will be shown mercy. Blessed are the pure in heart, for they will see God. Blessed are the peacemakers, for they will be called sons of God. Blessed are those who are persecuted because of righteousness, for theirs is the kingdom of heaven. Blessed are you when people insult you, persecute you, and falsely say all kinds of evil against you because of Me. Rejoice and be glad, because great is your reward in heaven; for in the same way they persecuted the prophets before you.",
+      "book": "Matthew",
+      "displayBook": "Matthew",
+      "chapter": 5,
+      "startVerse": 1,
+      "endVerse": 12,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "kingdom",
+        "joy",
+        "suffering"
+      ],
+      "canonicalOrder": 40005001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "MAT.6.9-15",
+      "reference": "Matthew 6:9-15",
+      "text": "So then, this is how you should pray: ‘Our Father in heaven, hallowed be Your name. Your kingdom come, Your will be done, on earth as it is in heaven. Give us this day our daily bread. And forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from the evil one.’ For if you forgive men their trespasses, your heavenly Father will also forgive you. But if you do not forgive men their trespasses, neither will your Father forgive yours.",
+      "book": "Matthew",
+      "displayBook": "Matthew",
+      "chapter": 6,
+      "startVerse": 9,
+      "endVerse": 15,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "prayer",
+        "repentance",
+        "kingdom"
+      ],
+      "canonicalOrder": 40006009,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "MAT.11.28-30",
+      "reference": "Matthew 11:28-30",
+      "text": "Come to Me, all you who are weary and burdened, and I will give you rest. Take My yoke upon you and learn from Me; for I am gentle and humble in heart, and you will find rest for your souls. For My yoke is easy and My burden is light.”",
+      "book": "Matthew",
+      "displayBook": "Matthew",
+      "chapter": 11,
+      "startVerse": 28,
+      "endVerse": 30,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "peace",
+        "hope",
+        "identity"
+      ],
+      "canonicalOrder": 40011028,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "MAT.22.36-40",
+      "reference": "Matthew 22:36-40",
+      "text": "“Teacher, which commandment is the greatest in the Law?” Jesus declared, “‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment. And the second is like it: ‘Love your neighbor as yourself.’ All the Law and the Prophets hang on these two commandments.”",
+      "book": "Matthew",
+      "displayBook": "Matthew",
+      "chapter": 22,
+      "startVerse": 36,
+      "endVerse": 40,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "love",
+        "wisdom",
+        "kingdom"
+      ],
+      "canonicalOrder": 40022036,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "MAR.4.35-41",
+      "reference": "Mark 4:35-41",
+      "text": "When that evening came, He said to His disciples, “Let us cross to the other side.” After they had dismissed the crowd, they took Jesus with them, since He was already in the boat. And there were other boats with Him. Soon a violent windstorm came up, and the waves were breaking over the boat, so that it was being swamped. But Jesus was in the stern, sleeping on the cushion. So they woke Him and said, “Teacher, don’t You care that we are perishing?” Then Jesus got up and rebuked the wind and the sea. “Silence!” He commanded. “Be still!” And the wind died down, and it was perfectly calm. “Why are you so afraid?” He asked. “Do you still have no faith?” Overwhelmed with fear, they asked one another, “Who is this, that even the wind and the sea obey Him?”",
+      "book": "Mark",
+      "displayBook": "Mark",
+      "chapter": 4,
+      "startVerse": 35,
+      "endVerse": 41,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "faith",
+        "peace",
+        "hope"
+      ],
+      "canonicalOrder": 41004035,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "LUK.10.25-37",
+      "reference": "Luke 10:25-37",
+      "text": "One day an expert in the law stood up to test Him. “Teacher,” he asked, “what must I do to inherit eternal life?” “What is written in the Law?” Jesus replied. “How do you read it?” He answered, “‘Love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind’ and ‘Love your neighbor as yourself.’” “You have answered correctly,” Jesus said. “Do this and you will live.” But wanting to justify himself, he asked Jesus, “And who is my neighbor?” Jesus took up this question and said, “A man was going down from Jerusalem to Jericho when he fell into the hands of robbers. They stripped him, beat him, and went away, leaving him half dead. Now by chance a priest was going down the same road, but when he saw him, he passed by on the other side. So too, when a Levite came to that spot and saw him, he passed by on the other side. But when a Samaritan on a journey came upon him, he looked at him and had compassion. He went to him and bandaged his wounds, pouring on oil and wine. Then he put him on his own animal, brought him to an inn, and took care of him. The next day he took out two denarii and gave them to the innkeeper. ‘Take care of him,’ he said, ‘and on my return I will repay you for any additional expense.’ Which of these three do you think was a neighbor to the man who fell into the hands of robbers?” “The one who showed him mercy,” replied the expert in the law. Then Jesus told him, “Go and do likewise.”",
+      "book": "Luke",
+      "displayBook": "Luke",
+      "chapter": 10,
+      "startVerse": 25,
+      "endVerse": 37,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "love",
+        "justice",
+        "wisdom"
+      ],
+      "canonicalOrder": 42010025,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "LUK.15.11-24",
+      "reference": "Luke 15:11-24",
+      "text": "Then Jesus said, “There was a man who had two sons. The younger son said to him, ‘Father, give me my share of the estate.’ So he divided his property between them. After a few days, the younger son got everything together and journeyed to a distant country, where he squandered his wealth in wild living. After he had spent all he had, a severe famine swept through that country, and he began to be in need. So he went and hired himself out to a citizen of that country, who sent him into his fields to feed the pigs. He longed to fill his belly with the pods the pigs were eating, but no one would give him a thing. Finally he came to his senses and said, ‘How many of my father’s hired servants have plenty of food? But here I am, starving to death! I will get up and go back to my father and say to him, “Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.”’ So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him. The son declared, ‘Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.’ But the father said to his servants, ‘Quick! Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet. Bring the fattened calf and kill it. Let us feast and celebrate. For this son of mine was dead and is alive again! He was lost and is found!’ So they began to celebrate.",
+      "book": "Luke",
+      "displayBook": "Luke",
+      "chapter": 15,
+      "startVerse": 11,
+      "endVerse": 24,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "repentance",
+        "love",
+        "identity"
+      ],
+      "canonicalOrder": 42015011,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "JHN.1.1-5",
+      "reference": "John 1:1-5",
+      "text": "In the beginning was the Word, and the Word was with God, and the Word was God. He was with God in the beginning. Through Him all things were made, and without Him nothing was made that has been made. In Him was life, and that life was the light of men. The Light shines in the darkness, and the darkness has not overcome it.",
+      "book": "John",
+      "displayBook": "John",
+      "chapter": 1,
+      "startVerse": 1,
+      "endVerse": 5,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "creation",
+        "identity",
+        "hope"
+      ],
+      "canonicalOrder": 43001001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "JHN.3.16-17",
+      "reference": "John 3:16-17",
+      "text": "For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life. For God did not send His Son into the world to condemn the world, but to save the world through Him.",
+      "book": "John",
+      "displayBook": "John",
+      "chapter": 3,
+      "startVerse": 16,
+      "endVerse": 17,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "love",
+        "faith",
+        "hope"
+      ],
+      "canonicalOrder": 43003016,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "JHN.10.11-16",
+      "reference": "John 10:11-16",
+      "text": "I am the good shepherd. The good shepherd lays down His life for the sheep. The hired hand is not the shepherd, and the sheep are not his own. When he sees the wolf coming, he abandons the sheep and runs away. Then the wolf pounces on them and scatters the flock. The man runs away because he is a hired servant and is unconcerned for the sheep. I am the good shepherd. I know My sheep and My sheep know Me, just as the Father knows Me and I know the Father. And I lay down My life for the sheep. I have other sheep that are not of this fold. I must bring them in as well, and they will listen to My voice. Then there will be one flock and one shepherd.",
+      "book": "John",
+      "displayBook": "John",
+      "chapter": 10,
+      "startVerse": 11,
+      "endVerse": 16,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "identity",
+        "love",
+        "peace"
+      ],
+      "canonicalOrder": 43010011,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "JHN.14.1-6",
+      "reference": "John 14:1-6",
+      "text": "“Do not let your hearts be troubled. You believe in God; believe in Me as well. In My Father’s house are many rooms. If it were not so, would I have told you that I am going there to prepare a place for you? And if I go and prepare a place for you, I will come back and welcome you into My presence, so that you also may be where I am. You know the way to the place where I am going.” “Lord,” said Thomas, “we do not know where You are going, so how can we know the way?” Jesus answered, “I am the way and the truth and the life. No one comes to the Father except through Me.",
+      "book": "John",
+      "displayBook": "John",
+      "chapter": 14,
+      "startVerse": 1,
+      "endVerse": 6,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "hope",
+        "peace",
+        "faith"
+      ],
+      "canonicalOrder": 43014001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "JHN.15.1-8",
+      "reference": "John 15:1-8",
+      "text": "“I am the true vine, and My Father is the keeper of the vineyard. He cuts off every branch in Me that bears no fruit, and every branch that does bear fruit, He prunes to make it even more fruitful. You are already clean because of the word I have spoken to you. Remain in Me, and I will remain in you. Just as no branch can bear fruit by itself unless it remains in the vine, neither can you bear fruit unless you remain in Me. I am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing. If anyone does not remain in Me, he is like a branch that is thrown away and withers. Such branches are gathered up, thrown into the fire, and burned. If you remain in Me and My words remain in you, ask whatever you wish, and it will be done for you. This is to My Father’s glory, that you bear much fruit, proving yourselves to be My disciples.",
+      "book": "John",
+      "displayBook": "John",
+      "chapter": 15,
+      "startVerse": 1,
+      "endVerse": 8,
+      "genre": "gospels",
+      "testament": "NT",
+      "themes": [
+        "identity",
+        "love",
+        "faith"
+      ],
+      "canonicalOrder": 43015001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "ACT.2.42-47",
+      "reference": "Acts 2:42-47",
+      "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer. A sense of awe came over everyone, and the apostles performed many wonders and signs. All the believers were together and had everything in common. Selling their possessions and goods, they shared with anyone who was in need. With one accord they continued to meet daily in the temple courts and to break bread from house to house, sharing their meals with gladness and sincerity of heart, praising God and enjoying the favor of all the people. And the Lord added to their number daily those who were being saved.",
+      "book": "Acts",
+      "displayBook": "Acts",
+      "chapter": 2,
+      "startVerse": 42,
+      "endVerse": 47,
+      "genre": "acts",
+      "testament": "NT",
+      "themes": [
+        "love",
+        "prayer",
+        "joy"
+      ],
+      "canonicalOrder": 44002042,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "ROM.5.1-5",
+      "reference": "Romans 5:1-5",
+      "text": "Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ, through whom we have gained access by faith into this grace in which we stand. And we rejoice in the hope of the glory of God. Not only that, but we also rejoice in our sufferings, because we know that suffering produces perseverance; perseverance, character; and character, hope. And hope does not disappoint us, because God has poured out His love into our hearts through the Holy Spirit, whom He has given us.",
+      "book": "Romans",
+      "displayBook": "Romans",
+      "chapter": 5,
+      "startVerse": 1,
+      "endVerse": 5,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "hope",
+        "suffering",
+        "peace"
+      ],
+      "canonicalOrder": 45005001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "ROM.8.28-39",
+      "reference": "Romans 8:28-39",
+      "text": "And we know that God works all things together for the good of those who love Him, who are called according to His purpose. For those God foreknew, He also predestined to be conformed to the image of His Son, so that He would be the firstborn among many brothers. And those He predestined, He also called; those He called, He also justified; those He justified, He also glorified. What then shall we say in response to these things? If God is for us, who can be against us? He who did not spare His own Son but gave Him up for us all, how will He not also, along with Him, freely give us all things? Who will bring any charge against God’s elect? It is God who justifies. Who is there to condemn us? For Christ Jesus, who died, and more than that was raised to life, is at the right hand of God—and He is interceding for us. Who shall separate us from the love of Christ? Shall trouble or distress or persecution or famine or nakedness or danger or sword? As it is written: “For Your sake we face death all day long; we are considered as sheep to be slaughtered.” No, in all these things we are more than conquerors through Him who loved us. For I am convinced that neither death nor life, neither angels nor principalities, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.",
+      "book": "Romans",
+      "displayBook": "Romans",
+      "chapter": 8,
+      "startVerse": 28,
+      "endVerse": 39,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "love",
+        "hope",
+        "identity"
+      ],
+      "canonicalOrder": 45008028,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "ROM.12.1-2",
+      "reference": "Romans 12:1-2",
+      "text": "Therefore I urge you, brothers, on account of God’s mercy, to offer your bodies as living sacrifices, holy and pleasing to God, which is your spiritual service of worship. Do not be conformed to this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what is the good, pleasing, and perfect will of God.",
+      "book": "Romans",
+      "displayBook": "Romans",
+      "chapter": 12,
+      "startVerse": 1,
+      "endVerse": 2,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "identity",
+        "wisdom",
+        "repentance"
+      ],
+      "canonicalOrder": 45012001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "1CO.13.1-13",
+      "reference": "1 Corinthians 13:1-13",
+      "text": "If I speak in the tongues of men and of angels, but have not love, I am only a ringing gong or a clanging cymbal. If I have the gift of prophecy and can fathom all mysteries and all knowledge, and if I have absolute faith so as to move mountains, but have not love, I am nothing. If I give all I possess to the poor and exult in the surrender of my body, but have not love, I gain nothing. Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It is not rude, it is not self-seeking, it is not easily angered, it keeps no account of wrongs. Love takes no pleasure in evil, but rejoices in the truth. It bears all things, believes all things, hopes all things, endures all things. Love never fails. But where there are prophecies, they will cease; where there are tongues, they will be restrained; where there is knowledge, it will be dismissed. For we know in part and we prophesy in part, but when the perfect comes, the partial passes away. When I was a child, I talked like a child, I thought like a child, I reasoned like a child. When I became a man, I set aside childish ways. Now we see but a dim reflection as in a mirror; then we shall see face to face. Now I know in part; then I shall know fully, even as I am fully known. And now these three remain: faith, hope, and love; but the greatest of these is love.",
+      "book": "I Corinthians",
+      "displayBook": "1 Corinthians",
+      "chapter": 13,
+      "startVerse": 1,
+      "endVerse": 13,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "love",
+        "faith",
+        "hope"
+      ],
+      "canonicalOrder": 46013001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "2CO.1.3-7",
+      "reference": "2 Corinthians 1:3-7",
+      "text": "Blessed be the God and Father of our Lord Jesus Christ, the Father of compassion and the God of all comfort, who comforts us in all our troubles, so that we can comfort those in any trouble with the comfort we ourselves have received from God. For just as the sufferings of Christ overflow to us, so also through Christ our comfort overflows. If we are afflicted, it is for your comfort and salvation; if we are comforted, it is for your comfort, which accomplishes in you patient endurance of the same sufferings we experience. And our hope for you is sure, because we know that just as you share in our sufferings, so also you will share in our comfort.",
+      "book": "II Corinthians",
+      "displayBook": "2 Corinthians",
+      "chapter": 1,
+      "startVerse": 3,
+      "endVerse": 7,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "suffering",
+        "peace",
+        "hope"
+      ],
+      "canonicalOrder": 47001003,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "2CO.12.7-10",
+      "reference": "2 Corinthians 12:7-10",
+      "text": "or because of these surpassingly great revelations. So to keep me from becoming conceited, I was given a thorn in my flesh, a messenger of Satan, to torment me. Three times I pleaded with the Lord to take it away from me. But He said to me, “My grace is sufficient for you, for My power is perfected in weakness.” Therefore I will boast all the more gladly in my weaknesses, so that the power of Christ may rest on me. That is why, for the sake of Christ, I delight in weaknesses, in insults, in hardships, in persecutions, in difficulties. For when I am weak, then I am strong.",
+      "book": "II Corinthians",
+      "displayBook": "2 Corinthians",
+      "chapter": 12,
+      "startVerse": 7,
+      "endVerse": 10,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "suffering",
+        "faith",
+        "identity"
+      ],
+      "canonicalOrder": 47012007,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "GAL.5.22-25",
+      "reference": "Galatians 5:22-25",
+      "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law. Those who belong to Christ Jesus have crucified the flesh with its passions and desires. Since we live by the Spirit, let us walk in step with the Spirit.",
+      "book": "Galatians",
+      "displayBook": "Galatians",
+      "chapter": 5,
+      "startVerse": 22,
+      "endVerse": 25,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "love",
+        "peace",
+        "identity"
+      ],
+      "canonicalOrder": 48005022,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "EPH.2.8-10",
+      "reference": "Ephesians 2:8-10",
+      "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast. For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance as our way of life.",
+      "book": "Ephesians",
+      "displayBook": "Ephesians",
+      "chapter": 2,
+      "startVerse": 8,
+      "endVerse": 10,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "faith",
+        "identity",
+        "hope"
+      ],
+      "canonicalOrder": 49002008,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "EPH.6.10-18",
+      "reference": "Ephesians 6:10-18",
+      "text": "Finally, be strong in the Lord and in His mighty power. Put on the full armor of God, so that you can make your stand against the devil’s schemes. For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this world’s darkness, and against the spiritual forces of evil in the heavenly realms. Therefore take up the full armor of God, so that when the day of evil comes, you will be able to stand your ground, and having done everything, to stand. Stand firm then, with the belt of truth buckled around your waist, with the breastplate of righteousness arrayed, and with your feet fitted with the readiness of the gospel of peace. In addition to all this, take up the shield of faith, with which you can extinguish all the flaming arrows of the evil one. And take the helmet of salvation and the sword of the Spirit, which is the word of God. Pray in the Spirit at all times, with every kind of prayer and petition. To this end, stay alert with all perseverance in your prayers for all the saints.",
+      "book": "Ephesians",
+      "displayBook": "Ephesians",
+      "chapter": 6,
+      "startVerse": 10,
+      "endVerse": 18,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "faith",
+        "prayer",
+        "identity"
+      ],
+      "canonicalOrder": 49006010,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "PHP.4.4-9",
+      "reference": "Philippians 4:4-9",
+      "text": "Rejoice in the Lord always. I will say it again: Rejoice! Let your gentleness be apparent to all. The Lord is near. Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus. Finally, brothers, whatever is true, whatever is honorable, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think on these things. Whatever you have learned or received or heard from me, or seen in me, put it into practice. And the God of peace will be with you.",
+      "book": "Philippians",
+      "displayBook": "Philippians",
+      "chapter": 4,
+      "startVerse": 4,
+      "endVerse": 9,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "joy",
+        "peace",
+        "prayer"
+      ],
+      "canonicalOrder": 50004004,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "COL.3.12-17",
+      "reference": "Colossians 3:12-17",
+      "text": "Therefore, as the elect of God, holy and beloved, clothe yourselves with hearts of compassion, kindness, humility, gentleness, and patience. Bear with one another and forgive any complaint you may have against someone else. Forgive as the Lord forgave you. And over all these virtues put on love, which is the bond of perfect unity. Let the peace of Christ rule in your hearts, for to this you were called as members of one body. And be thankful. Let the word of Christ richly dwell within you as you teach and admonish one another with all wisdom, and as you sing psalms, hymns, and spiritual songs with gratitude in your hearts to God. And whatever you do, in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through Him.",
+      "book": "Colossians",
+      "displayBook": "Colossians",
+      "chapter": 3,
+      "startVerse": 12,
+      "endVerse": 17,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "love",
+        "peace",
+        "wisdom"
+      ],
+      "canonicalOrder": 51003012,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "1TH.5.16-18",
+      "reference": "1 Thessalonians 5:16-18",
+      "text": "Rejoice at all times. Pray without ceasing. Give thanks in every circumstance, for this is God’s will for you in Christ Jesus.",
+      "book": "I Thessalonians",
+      "displayBook": "1 Thessalonians",
+      "chapter": 5,
+      "startVerse": 16,
+      "endVerse": 18,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "joy",
+        "prayer",
+        "faith"
+      ],
+      "canonicalOrder": 52005016,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "2TI.1.6-8",
+      "reference": "2 Timothy 1:6-8",
+      "text": "For this reason I remind you to fan into flame the gift of God, which is in you through the laying on of my hands. For God has not given us a spirit of fear, but of power, love, and self-control. So do not be ashamed of the testimony of our Lord, or of me, His prisoner. Instead, join me in suffering for the gospel by the power of God.",
+      "book": "II Timothy",
+      "displayBook": "2 Timothy",
+      "chapter": 1,
+      "startVerse": 6,
+      "endVerse": 8,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "faith",
+        "identity",
+        "suffering"
+      ],
+      "canonicalOrder": 55001006,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "HEB.4.14-16",
+      "reference": "Hebrews 4:14-16",
+      "text": "Therefore, since we have a great high priest who has passed through the heavens, Jesus the Son of God, let us hold firmly to what we profess. For we do not have a high priest who is unable to sympathize with our weaknesses, but we have one who was tempted in every way that we are, yet was without sin. Let us then approach the throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of need.",
+      "book": "Hebrews",
+      "displayBook": "Hebrews",
+      "chapter": 4,
+      "startVerse": 14,
+      "endVerse": 16,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "prayer",
+        "hope",
+        "identity"
+      ],
+      "canonicalOrder": 58004014,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "HEB.11.1-3",
+      "reference": "Hebrews 11:1-3",
+      "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see. This is why the ancients were commended. By faith we understand that the universe was formed at God’s command, so that what is seen was not made out of what was visible.",
+      "book": "Hebrews",
+      "displayBook": "Hebrews",
+      "chapter": 11,
+      "startVerse": 1,
+      "endVerse": 3,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "faith",
+        "hope",
+        "creation"
+      ],
+      "canonicalOrder": 58011001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "HEB.12.1-3",
+      "reference": "Hebrews 12:1-3",
+      "text": "Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off every encumbrance and the sin that so easily entangles, and let us run with endurance the race set out for us. Let us fix our eyes on Jesus, the author and perfecter of our faith, who for the joy set before Him endured the cross, scorning its shame, and sat down at the right hand of the throne of God. Consider Him who endured such hostility from sinners, so that you will not grow weary and lose heart.",
+      "book": "Hebrews",
+      "displayBook": "Hebrews",
+      "chapter": 12,
+      "startVerse": 1,
+      "endVerse": 3,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "faith",
+        "suffering",
+        "hope"
+      ],
+      "canonicalOrder": 58012001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "JAS.1.2-5",
+      "reference": "James 1:2-5",
+      "text": "Consider it pure joy, my brothers, when you encounter trials of many kinds, because you know that the testing of your faith develops perseverance. Allow perseverance to finish its work, so that you may be mature and complete, not lacking anything. Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him.",
+      "book": "James",
+      "displayBook": "James",
+      "chapter": 1,
+      "startVerse": 2,
+      "endVerse": 5,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "suffering",
+        "wisdom",
+        "joy"
+      ],
+      "canonicalOrder": 59001002,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "1PE.1.3-9",
+      "reference": "1 Peter 1:3-9",
+      "text": "Blessed be the God and Father of our Lord Jesus Christ! By His great mercy He has given us new birth into a living hope through the resurrection of Jesus Christ from the dead, and into an inheritance that is imperishable, undefiled, and unfading, reserved in heaven for you, who through faith are shielded by God’s power for the salvation that is ready to be revealed in the last time. In this you greatly rejoice, though now for a little while you may have had to suffer grief in various trials so that the proven character of your faith—more precious than gold, which perishes even though refined by fire—may result in praise, glory, and honor at the revelation of Jesus Christ. Though you have not seen Him, you love Him; and though you do not see Him now, you believe in Him and rejoice with an inexpressible and glorious joy, now that you are receiving the goal of your faith, the salvation of your souls.",
+      "book": "I Peter",
+      "displayBook": "1 Peter",
+      "chapter": 1,
+      "startVerse": 3,
+      "endVerse": 9,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "hope",
+        "suffering",
+        "faith"
+      ],
+      "canonicalOrder": 60001003,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "1PE.5.6-10",
+      "reference": "1 Peter 5:6-10",
+      "text": "Humble yourselves, therefore, under God’s mighty hand, so that in due time He may exalt you. Cast all your anxiety on Him, because He cares for you. Be sober-minded and alert. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, standing firm in your faith and in the knowledge that your brothers throughout the world are undergoing the same kinds of suffering. And after you have suffered for a little while, the God of all grace, who has called you to His eternal glory in Christ, will Himself restore you, secure you, strengthen you, and establish you.",
+      "book": "I Peter",
+      "displayBook": "1 Peter",
+      "chapter": 5,
+      "startVerse": 6,
+      "endVerse": 10,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "suffering",
+        "hope",
+        "peace"
+      ],
+      "canonicalOrder": 60005006,
+      "isPopular": false,
+      "translation": "BSB"
+    },
+    {
+      "id": "1JN.4.7-12",
+      "reference": "1 John 4:7-12",
+      "text": "Beloved, let us love one another, because love comes from God. Everyone who loves has been born of God and knows God. Whoever does not love does not know God, because God is love. This is how God’s love was revealed among us: God sent His one and only Son into the world, so that we might live through Him. And love consists in this: not that we loved God, but that He loved us and sent His Son as the atoning sacrifice for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; but if we love one another, God remains in us, and His love is perfected in us.",
+      "book": "I John",
+      "displayBook": "1 John",
+      "chapter": 4,
+      "startVerse": 7,
+      "endVerse": 12,
+      "genre": "epistles",
+      "testament": "NT",
+      "themes": [
+        "love",
+        "identity",
+        "faith"
+      ],
+      "canonicalOrder": 62004007,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "REV.21.1-5",
+      "reference": "Revelation 21:1-5",
+      "text": "Then I saw a new heaven and a new earth, for the first heaven and earth had passed away, and the sea was no more. I saw the holy city, the new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband. And I heard a loud voice from the throne saying: “Behold, the dwelling place of God is with man, and He will dwell with them. They will be His people, and God Himself will be with them as their God. ‘He will wipe away every tear from their eyes,’ and there will be no more death or mourning or crying or pain, for the former things have passed away.” And the One seated on the throne said, “Behold, I make all things new.” Then He said, “Write this down, for these words are faithful and true.”",
+      "book": "Revelation of John",
+      "displayBook": "Revelation",
+      "chapter": 21,
+      "startVerse": 1,
+      "endVerse": 5,
+      "genre": "apocalyptic",
+      "testament": "NT",
+      "themes": [
+        "hope",
+        "creation",
+        "kingdom"
+      ],
+      "canonicalOrder": 66021001,
+      "isPopular": true,
+      "translation": "BSB"
+    },
+    {
+      "id": "REV.22.1-5",
+      "reference": "Revelation 22:1-5",
+      "text": "Then the angel showed me a river of the water of life, as clear as crystal, flowing from the throne of God and of the Lamb down the middle of the main street of the city. On either side of the river stood a tree of life, bearing twelve kinds of fruit and yielding a fresh crop for each month. And the leaves of the tree are for the healing of the nations. No longer will there be any curse. The throne of God and of the Lamb will be within the city, and His servants will worship Him. They will see His face, and His name will be on their foreheads. There will be no more night in the city, and they will have no need for the light of a lamp or of the sun. For the Lord God will shine on them, and they will reign forever and ever.",
+      "book": "Revelation of John",
+      "displayBook": "Revelation",
+      "chapter": 22,
+      "startVerse": 1,
+      "endVerse": 5,
+      "genre": "apocalyptic",
+      "testament": "NT",
+      "themes": [
+        "hope",
+        "kingdom",
+        "peace"
+      ],
+      "canonicalOrder": 66022001,
+      "isPopular": false,
+      "translation": "BSB"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "matthew-henry-concise",
+      "author": "Matthew Henry",
+      "work": "Commentary on the Whole Bible (Concise)",
+      "tradition": "Protestant",
+      "era": "1662–1714",
+      "license": "public-domain",
+      "notes": "Pastoral English exposition. Excerpts shortened for mobile; full work is public domain."
+    },
+    {
+      "id": "jfb",
+      "author": "Jamieson, Fausset & Brown",
+      "work": "Commentary Critical and Explanatory on the Whole Bible",
+      "tradition": "Protestant",
+      "era": "1871",
+      "license": "public-domain",
+      "notes": "Concise critical notes; verse-oriented."
+    },
+    {
+      "id": "chrysostom-homilies",
+      "author": "John Chrysostom",
+      "work": "Homilies (NPNF)",
+      "tradition": "Patristic",
+      "era": "c. 349–407",
+      "license": "public-domain",
+      "notes": "English from Nicene and Post-Nicene Fathers series (public domain editions)."
+    },
+    {
+      "id": "calvin-commentaries",
+      "author": "John Calvin",
+      "work": "Commentaries",
+      "tradition": "Reformed",
+      "era": "1509–1564",
+      "license": "public-domain",
+      "notes": "Classic Reformed exposition; short excerpts only."
+    },
+    {
+      "id": "tsk",
+      "author": "R. A. Torrey (ed.)",
+      "work": "Treasury of Scripture Knowledge",
+      "tradition": "Cross-reference",
+      "era": "1830s / later ed.",
+      "license": "public-domain",
+      "notes": "Cross-references rather than interpretive essay; used sparingly."
+    }
+  ]
+}
