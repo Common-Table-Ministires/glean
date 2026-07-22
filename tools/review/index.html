@@ -130,6 +130,30 @@
   .voice-text { margin: 0 0 8px; font-size: 15px; line-height: 1.55; color: var(--ink); }
   .voice-tags { display: flex; gap: 6px; flex-wrap: wrap; }
   .ctm-voice { border-color: var(--accent); background: var(--accent-soft); }
+  /* clip editor + phone mock */
+  .phone { width: 236px; margin: 0 auto 14px; aspect-ratio: 9 / 16; border-radius: 26px;
+    background: linear-gradient(160deg, #f3ead9, #e7d9bf); border: 8px solid #1c1a17;
+    box-shadow: 0 10px 30px rgba(0,0,0,.28); padding: 26px 20px; display: flex; flex-direction: column;
+    justify-content: center; overflow: hidden; }
+  .phone-ref { font: 700 10px/1 ui-sans-serif, system-ui; letter-spacing: .12em; text-transform: uppercase;
+    color: #8a6d3b; margin-bottom: 12px; }
+  .phone-text { font-family: Palatino, "Palatino Linotype", Georgia, serif; color: #2b2417; line-height: 1.3; }
+  .phone-text.tier-hero { font-size: 27px; line-height: 1.22; }
+  .phone-text.tier-standard { font-size: 20px; }
+  .phone-text.tier-passage { font-size: 15px; line-height: 1.4; }
+  .phone-text.tier-notImage { font-size: 12px; line-height: 1.45; }
+  .phone-brand { margin-top: auto; font: 600 9px/1 ui-sans-serif, system-ui; letter-spacing: .1em;
+    text-transform: uppercase; color: #a8895a; padding-top: 14px; }
+  .clip-readout { text-align: center; font-size: 13px; color: var(--ink-2); margin-bottom: 6px; }
+  .clip-help { text-align: center; font-size: 12px; color: var(--ink-3); margin-bottom: 10px; }
+  .words { line-height: 2.1; font-family: Palatino, Georgia, serif; font-size: 16px; }
+  .w { cursor: pointer; padding: 1px 2px; border-radius: 4px; color: var(--ink-3);
+    transition: background .08s, color .08s; }
+  .w:hover { background: var(--edge); color: var(--ink); }
+  .w.on { background: color-mix(in srgb, var(--accent) 26%, transparent); color: var(--ink); }
+  .w.anchor { outline: 2px solid var(--accent); }
+  .clip-controls { display: flex; gap: 8px; justify-content: center; margin-top: 12px; }
+  button.mini { font-size: 12px; padding: 5px 11px; }
 </style>
 </head>
 <body>
@@ -247,6 +271,114 @@
   }
 
   // ---- rendering ------------------------------------------------------------
+  const TIERS = [
+    { max: 12, name: "hero", note: "large type, image breathes" },
+    { max: 30, name: "standard", note: "the common case" },
+    { max: 60, name: "passage", note: "smaller type, tighter" },
+    { max: Infinity, name: "notImage", note: "too long for a graphic" },
+  ];
+  function tierFor(words) { return TIERS.find(t => words <= t.max); }
+
+  // Split a passage into word tokens, keeping punctuation attached, so a clip is
+  // always a contiguous verbatim run.
+  function tokenize(text) { return text.trim().split(/\s+/); }
+
+  // Locate the current focus clip inside the passage, as a [start,end] token range.
+  // Punctuation-tolerant: the focus may end at "Son" while the passage token is
+  // "Son," so compare with edge punctuation and quotes stripped.
+  function bare(s) { return s.replace(/[^\w]/g, "").toLowerCase(); }
+  function findClipRange(tokens, clip) {
+    if (!clip) return [0, tokens.length - 1];
+    const c = clip.trim().split(/\s+/).map(bare).filter(Boolean);
+    const t = tokens.map(bare);
+    for (let i = 0; i + c.length <= t.length; i++) {
+      let ok = true;
+      for (let j = 0; j < c.length; j++) { if (t[i + j] !== c[j]) { ok = false; break; } }
+      if (ok) return [i, i + c.length - 1];
+    }
+    return [0, tokens.length - 1];
+  }
+
+  // The interactive clip editor + phone mock.
+  function renderClipEditor(it, host) {
+    const tokens = tokenize(it.passage.text);
+    const focusText = (it.focus && it.focus.text) || it.shareLine || it.passage.text;
+    if (it._clip == null) it._clip = findClipRange(tokens, focusText);
+    let anchor = null; // first click of a two-click range
+
+    const mock = document.createElement("div");
+    mock.className = "phone";
+    const readout = document.createElement("div");
+    readout.className = "clip-readout";
+    const help = document.createElement("div");
+    help.className = "clip-help";
+    help.textContent = "Click the first word, then the last word, to set the shared line. Shorter reads bigger.";
+    const wordWrap = document.createElement("div");
+    wordWrap.className = "words";
+    const controls = document.createElement("div");
+    controls.className = "clip-controls";
+
+    function clipText() {
+      const [a, b] = it._clip;
+      return tokens.slice(a, b + 1).join(" ");
+    }
+
+    function commit() {
+      const text = clipText();
+      const words = text.split(/\s+/).length;
+      const tier = tierFor(words);
+      if (!it.focus) it.focus = {};
+      it.focus.text = text;
+      it.focus.tier = tier.name;
+      it.focus.clipStart = it._clip[0];
+      it.focus.clipEnd = it._clip[1];
+      // keep the flat share-line field in sync for simple consumers
+      it.shareLine = text;
+    }
+
+    function paint() {
+      const [a, b] = it._clip;
+      wordWrap.innerHTML = "";
+      tokens.forEach((w, i) => {
+        const s = document.createElement("span");
+        s.className = "w" + (i >= a && i <= b ? " on" : "") + (i === anchor ? " anchor" : "");
+        s.textContent = w;
+        s.onclick = () => {
+          if (anchor == null) { anchor = i; it._clip = [i, i]; }
+          else { it._clip = [Math.min(anchor, i), Math.max(anchor, i)]; anchor = null; }
+          commit(); paint();
+        };
+        wordWrap.appendChild(s);
+        wordWrap.appendChild(document.createTextNode(" "));
+      });
+      const text = clipText();
+      const words = text.split(/\s+/).length;
+      const tier = tierFor(words);
+      mock.innerHTML =
+        "<div class='phone-ref'>" + ((it.focus && it.focus.reference) || it.reference || "") + "</div>" +
+        "<div class='phone-text tier-" + tier.name + "'>" + text.replace(/</g, "&lt;") + "</div>" +
+        "<div class='phone-brand'>Glean · " + (it.translation || "BSB") + "</div>";
+      readout.innerHTML = "<strong>" + words + " words</strong> · tier <strong>" + tier.name +
+        "</strong> <span class='muted'>(" + tier.note + ")</span>" +
+        (tier.name === "notImage" ? " <span class='chip warn'>too long for an image</span>" : "");
+    }
+
+    const full = document.createElement("button");
+    full.className = "mini"; full.textContent = "Use full passage";
+    full.onclick = () => { it._clip = [0, tokens.length - 1]; anchor = null; commit(); paint(); };
+    const firstSentence = document.createElement("button");
+    firstSentence.className = "mini"; firstSentence.textContent = "First sentence";
+    firstSentence.onclick = () => {
+      let end = tokens.findIndex(t => /[.!?”"]$/.test(t));
+      if (end < 0) end = tokens.length - 1;
+      it._clip = [0, end]; anchor = null; commit(); paint();
+    };
+    controls.append(full, firstSentence);
+
+    host.append(mock, readout, help, wordWrap, controls);
+    commit(); paint();
+  }
+
   // Stacked layers for a composite passage card: photo slot, full passage,
   // context neighbors, historical voices with attribution, CTM reflection.
   function renderCardLayers(it) {
@@ -264,6 +396,13 @@
       box.appendChild(d);
       return d;
     };
+
+    // Clip editor + phone mock: adjust how much Scripture is the shared line and
+    // see it rendered. The clip is always a contiguous run of the full passage,
+    // so it stays verbatim by construction.
+    if (it.passage && it.passage.text) {
+      renderClipEditor(it, layer("Clip & preview"));
+    }
 
     if (it.photo) {
       const l = layer("Background photo");
