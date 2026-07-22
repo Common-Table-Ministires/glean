@@ -135,15 +135,16 @@ Presentation tiers, derived from word count of `shareLine ?? focusText`:
   ever ship. Ship it advisory-first so the counts are visible before it changes
   behavior.
 
-## One decision still open
+## Resolved: Jesus is the through-line, not a character entry
 
-**Jesus is not one entry in a list next to Jonah.** For a ministry app this is
-not cosmetic. Options: the through-line every arc points toward rather than a
-browsable entry; a structurally different treatment (the Gospels as their own
-mode); or a flat list where ordering carries the weight. Decide before the
-character data model hardens; it is expensive to change after. Recommendation:
-the spine, not a list entry, with the through-line doc as the artifact that makes
-that concrete.
+Decided 2026-07-22 (Tim: "Jesus is the story, always"). Christ is not one entry
+in a character list next to Jonah; he is the spine every other arc points at.
+Concretely for the data model: the `Character` browse set is Old Testament
+figures and the apostles, and each arc's `echoes` and the through-line itself
+resolve toward Christ. Jesus gets a structurally distinct treatment (a larger
+piece, deferred), never a row in the same list as the others. The through-line
+doc, scaffolded on the 1689, is where that spine gets written; that is the
+larger work Tim flagged, not part of the first batches.
 
 ## Sequence
 

@@ -1,0 +1,24 @@
+{
+  "batch": "01-anchors",
+  "kind": "shareLine",
+  "description": "Share lines for the most recognizable anchor passages. A share line is a verbatim clip of the BSB text, never a paraphrase; the builder rejects any line that is not an exact substring of its chunk.",
+  "items": [
+    { "chunkId": "JHN.3.16-17", "shareLine": "For God so loved the world that He gave His one and only Son", "shareLineReference": "John 3:16a", "standsAlone": true },
+    { "chunkId": "PSA.23.1-6", "shareLine": "The LORD is my shepherd; I shall not want", "shareLineReference": "Psalm 23:1", "standsAlone": true },
+    { "chunkId": "JER.29.11-14", "shareLine": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope", "shareLineReference": "Jeremiah 29:11", "standsAlone": true },
+    { "chunkId": "ROM.8.28-39", "shareLine": "in all these things we are more than conquerors through Him who loved us", "shareLineReference": "Romans 8:37", "standsAlone": true },
+    { "chunkId": "PHP.4.4-9", "shareLine": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God", "shareLineReference": "Philippians 4:6", "standsAlone": true },
+    { "chunkId": "ISA.40.28-31", "shareLine": "But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles", "shareLineReference": "Isaiah 40:31a", "standsAlone": true },
+    { "chunkId": "PRO.3.5-8", "shareLine": "Trust in the LORD with all your heart, and lean not on your own understanding", "shareLineReference": "Proverbs 3:5", "standsAlone": true },
+    { "chunkId": "MAT.11.28-30", "shareLine": "Come to Me, all you who are weary and burdened, and I will give you rest", "shareLineReference": "Matthew 11:28", "standsAlone": true },
+    { "chunkId": "1CO.13.1-13", "shareLine": "Love is patient, love is kind", "shareLineReference": "1 Corinthians 13:4a", "standsAlone": true },
+    { "chunkId": "GAL.5.22-25", "shareLine": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control", "shareLineReference": "Galatians 5:22-23", "standsAlone": true },
+    { "chunkId": "ROM.12.1-2", "shareLine": "Do not be conformed to this world, but be transformed by the renewing of your mind", "shareLineReference": "Romans 12:2a", "standsAlone": true },
+    { "chunkId": "MAT.6.9-15", "shareLine": "Your kingdom come, Your will be done, on earth as it is in heaven", "shareLineReference": "Matthew 6:10", "standsAlone": true },
+    { "chunkId": "LAM.3.21-26", "shareLine": "They are new every morning; great is Your faithfulness!", "shareLineReference": "Lamentations 3:23", "standsAlone": true },
+    { "chunkId": "HEB.11.1-3", "shareLine": "Now faith is the assurance of what we hope for and the certainty of what we do not see", "shareLineReference": "Hebrews 11:1", "standsAlone": true },
+    { "chunkId": "MIC.6.6-8", "shareLine": "And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?", "shareLineReference": "Micah 6:8b", "standsAlone": true },
+    { "chunkId": "2CO.12.7-10", "shareLine": "My grace is sufficient for you, for My power is perfected in weakness", "shareLineReference": "2 Corinthians 12:9a", "standsAlone": true },
+    { "chunkId": "EPH.2.8-10", "shareLine": "For it is by grace you have been saved through faith", "shareLineReference": "Ephesians 2:8a", "standsAlone": true }
+  ]
+}
