@@ -1,0 +1,63 @@
+{
+  "batch": "demo-composite-card",
+  "kind": "passageCard",
+  "note": "One composite card, hand-assembled to show the full review shape: photo slot, focus line, full passage, context neighbors, historical voices with attribution, and a CTM reflection drafted for Tim to rewrite. Not yet produced by a builder; this is the target shape to react to.",
+  "items": [
+    {
+      "id": "JHN.3.16-17#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+
+      "photo": { "status": "none", "note": "Hero-tier core verse; a Birchwood farm photo would sit here as the share background." },
+
+      "focus": {
+        "reference": "John 3:16a",
+        "text": "For God so loved the world that He gave His one and only Son",
+        "tier": "standard",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+
+      "passage": {
+        "reference": "John 3:16-17",
+        "text": "For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life. For God did not send His Son into the world to condemn the world, but to save the world through Him."
+      },
+
+      "context": {
+        "before": [
+          { "ref": "John 3:14", "text": "Just as Moses lifted up the snake in the wilderness, so the Son of Man must be lifted up," },
+          { "ref": "John 3:15", "text": "that everyone who believes in Him may have eternal life." }
+        ],
+        "after": [
+          { "ref": "John 3:18", "text": "Whoever believes in Him is not condemned, but whoever does not believe has already been condemned, because he has not believed in the name of God’s one and only Son." }
+        ]
+      },
+
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Concise Commentary on the Whole Bible",
+          "locator": "on John 3:16",
+          "verbatim": false,
+          "confidence": "widelyHeld",
+          "text": "Here is gospel indeed—good news. God so loved the world—not as he loves his own children, yet with a common love of pity and patience. He gave his only-begotten Son that whosoever believes should not perish."
+        },
+        {
+          "source": "John Calvin",
+          "work": "Commentary on the Gospel of John",
+          "locator": "on John 3:16",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "Christ brought life because the heavenly Father loves the human race and wishes that they should not perish. Faith is not a bare knowledge, but receives Christ as he is offered by the Father—for salvation."
+        }
+      ],
+
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "\"Gave\" is the hardest word here to receive. We spend our lives trying to earn a place, to prove we belong, to pay something back; here God simply gives, before we ask and before we deserve it. On the farm we learn the harvest was never ours to manufacture, only to tend what was already given. This verse is that, all the way down."
+      }
+    }
+  ]
+}

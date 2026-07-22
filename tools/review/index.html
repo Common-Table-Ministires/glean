@@ -116,6 +116,20 @@
   .drop.over { border-color: var(--accent); background: var(--accent-soft); }
   ul.help { margin: 10px 0 0; padding-left: 18px; font-size: 13px; color: var(--ink-2); line-height: 1.7; }
   .hidden { display: none !important; }
+  /* composite passage-card layers */
+  #cardLayers { margin-top: 18px; display: flex; flex-direction: column; gap: 14px; }
+  .layer { border-top: 1px solid var(--edge); padding-top: 12px; }
+  .layer-title { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; }
+  .layer-body { margin: 0; font-size: 16px; line-height: 1.6; color: var(--ink); }
+  .serif { font-family: Palatino, "Palatino Linotype", Georgia, serif; }
+  .photo-slot { font-size: 13px; color: var(--ink-2); background: var(--bg); border: 1px dashed var(--edge); border-radius: 8px; padding: 14px; }
+  .ctx-line { margin: 0 0 6px; font-size: 14px; color: var(--ink-2); line-height: 1.5; }
+  .ctx-ref { font-weight: 700; color: var(--ink-3); font-size: 12px; }
+  .voice { background: var(--bg); border: 1px solid var(--edge); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; }
+  .voice-attr { font-size: 13px; font-weight: 650; color: var(--ink); margin-bottom: 6px; }
+  .voice-text { margin: 0 0 8px; font-size: 15px; line-height: 1.55; color: var(--ink); }
+  .voice-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .ctm-voice { border-color: var(--accent); background: var(--accent-soft); }
 </style>
 </head>
 <body>
@@ -152,6 +166,7 @@
       <div class="meta" id="chips"></div>
       <div class="ref" id="itemRef"></div>
       <div class="body-text" id="itemText"></div>
+      <div id="cardLayers"></div>
 
       <label class="field hidden" id="editLabel" for="editBox">Edited text (saved with your decision)</label>
       <textarea id="editBox" class="hidden"></textarea>
@@ -232,13 +247,104 @@
   }
 
   // ---- rendering ------------------------------------------------------------
+  // Stacked layers for a composite passage card: photo slot, full passage,
+  // context neighbors, historical voices with attribution, CTM reflection.
+  function renderCardLayers(it) {
+    const box = $("cardLayers");
+    box.innerHTML = "";
+    const esc = (s) => (s == null ? "" : String(s));
+
+    const layer = (title, cls) => {
+      const d = document.createElement("div");
+      d.className = "layer " + (cls || "");
+      const h = document.createElement("div");
+      h.className = "layer-title";
+      h.textContent = title;
+      d.appendChild(h);
+      box.appendChild(d);
+      return d;
+    };
+
+    if (it.photo) {
+      const l = layer("Background photo");
+      const p = document.createElement("div");
+      p.className = "photo-slot";
+      p.textContent = it.photo.status === "none"
+        ? "▢ no photo yet — " + esc(it.photo.note)
+        : "photo: " + esc(it.photo.id || it.photo.status);
+      l.appendChild(p);
+    }
+
+    if (it.passage) {
+      const l = layer("Full passage · " + esc(it.passage.reference));
+      const p = document.createElement("p");
+      p.className = "layer-body serif";
+      p.textContent = esc(it.passage.text);
+      l.appendChild(p);
+    }
+
+    if (it.context && (it.context.before || it.context.after)) {
+      const l = layer("Context (neighbors)");
+      [...(it.context.before || []), ...(it.context.after || [])].forEach(n => {
+        const p = document.createElement("p");
+        p.className = "ctx-line";
+        p.innerHTML = "<span class='ctx-ref'>" + esc(n.ref) + "</span> " + esc(n.text);
+        l.appendChild(p);
+      });
+    }
+
+    if (Array.isArray(it.historicalVoices) && it.historicalVoices.length) {
+      const l = layer("Historical voices");
+      it.historicalVoices.forEach(v => {
+        const card = document.createElement("div");
+        card.className = "voice";
+        const hasLoc = v.locator || v.verbatim === true;
+        card.innerHTML =
+          "<div class='voice-attr'>" + esc(v.source) +
+          (v.work ? " · <span class='muted'>" + esc(v.work) + "</span>" : "") + "</div>" +
+          "<p class='voice-text serif'>" + esc(v.text) + "</p>" +
+          "<div class='voice-tags'>" +
+          "<span class='chip'>" + esc(v.confidence || "unrated") + "</span>" +
+          (hasLoc
+            ? "<span class='chip'>" + esc(v.locator || "verbatim") + "</span>"
+            : "<span class='chip warn'>no locator</span>") +
+          (v.verbatim === false ? "<span class='chip warn'>excerpt unverified</span>" : "") +
+          "</div>";
+        l.appendChild(card);
+      });
+    }
+
+    if (it.ctmReflection) {
+      const r = it.ctmReflection;
+      const l = layer("CTM reflection", "ctm");
+      const card = document.createElement("div");
+      card.className = "voice ctm-voice";
+      card.innerHTML =
+        "<div class='voice-attr'>" + esc(r.source || "Common Table Ministries") +
+        (r.status === "draft" ? " <span class='chip warn'>draft — rewrite me</span>" : "") + "</div>" +
+        "<p class='voice-text serif'>" + esc(r.text) + "</p>" +
+        "<div class='voice-tags'><span class='chip'>" + esc(r.confidence || "personal") + "</span></div>";
+      l.appendChild(card);
+    }
+  }
+
   function render() {
     if (!items.length) return;
     idx = Math.max(0, Math.min(idx, items.length - 1));
     const it = items[idx];
 
-    $("itemRef").textContent = refOf(it);
-    $("itemText").textContent = textOf(it);
+    // Composite "passage card" items render as a stacked card; simple items
+    // keep the flat one-blob view.
+    const isCard = it.focus || it.historicalVoices || it.ctmReflection;
+    if (isCard) {
+      $("itemRef").textContent = (it.focus && it.focus.reference) || refOf(it);
+      $("itemText").textContent = (it.focus && it.focus.text) || "";
+      renderCardLayers(it);
+    } else {
+      $("itemRef").textContent = refOf(it);
+      $("itemText").textContent = textOf(it);
+      $("cardLayers").innerHTML = "";
+    }
 
     const chipBox = $("chips");
     chipBox.innerHTML = "";
