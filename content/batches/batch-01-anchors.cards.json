@@ -1,0 +1,860 @@
+{
+  "batch": "01-anchors-cards",
+  "kind": "passageCard",
+  "count": 17,
+  "items": [
+    {
+      "id": "JHN.3.16-17#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "John 3:16-17",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "John 3:16a",
+        "text": "For God so loved the world that He gave His one and only Son",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "John 3:16-17",
+        "text": "For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life. For God did not send His Son into the world to condemn the world, but to save the world through Him."
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "John 3:14",
+            "text": "Just as Moses lifted up the snake in the wilderness, so the Son of Man must be lifted up,"
+          },
+          {
+            "ref": "John 3:15",
+            "text": "that everyone who believes in Him may have eternal life."
+          }
+        ],
+        "after": [
+          {
+            "ref": "John 3:18",
+            "text": "Whoever believes in Him is not condemned, but whoever does not believe has already been condemned, because he has not believed in the name of God’s one and only Son."
+          },
+          {
+            "ref": "John 3:19",
+            "text": "And this is the verdict: The Light has come into the world, but men loved the darkness rather than the Light because their deeds were evil."
+          }
+        ]
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on John 3:16",
+          "verbatim": false,
+          "confidence": "widelyHeld",
+          "text": "Here is gospel indeed—good news. God so loved the world—not as he loves his own children, yet with a common love of pity and patience. He gave his only-begotten Son that whosoever believes should not perish."
+        },
+        {
+          "source": "John Calvin",
+          "work": "Commentaries",
+          "locator": "on John 3:16",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "Christ brought life because the heavenly Father loves the human race and wishes that they should not perish. Faith is not a bare knowledge, but receives Christ as he is offered by the Father—for salvation."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "\"Gave\" is the hardest word here to receive. We spend our lives trying to earn a place, to prove we belong, to pay something back; here God simply gives, before we ask and before we deserve it. On the farm we learn the harvest was never ours to manufacture, only to tend what was already given."
+      }
+    },
+    {
+      "id": "PSA.23.1-6#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Psalms 23:1-6",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Psalm 23:1",
+        "text": "The LORD is my shepherd; I shall not want",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Psalms 23:1-6",
+        "text": "A Psalm of David. The LORD is my shepherd; I shall not want. He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul; He guides me in the paths of righteousness for the sake of His name. Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me; Your rod and Your staff, they comfort me. You prepare a table before me in the presence of my enemies. You anoint my head with oil; my cup overflows. Surely goodness and mercy will follow me all the days of my life, and I will dwell in the house of the LORD forever."
+      },
+      "context": {
+        "before": [],
+        "after": []
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on Psalm 23:1",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "From what David had been to his flocks as a good shepherd, he was led to consider what God is to his people. Care and protection of the sheep belong to the shepherd. With the Lord as our Shepherd, we may be sure we shall not want any thing that is really good for us."
+        },
+        {
+          "source": "Jamieson, Fausset & Brown",
+          "work": "Commentary Critical and Explanatory on the Whole Bible",
+          "locator": "on Psalm 23:4",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "In the darkest and most trying hour God is near. His rod (defense) and staff (support) comfort the saint. Death itself is only a 'shadow,' not the substance of evil to those who are in Christ."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "A shepherd is not a manager; he lives with the sheep, walks the same ground, sleeps in the same weather. The line does not promise we will never want; it promises we will not want for Him. Formation is learning to be led by someone who stays."
+      }
+    },
+    {
+      "id": "JER.29.11-14#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Jeremiah 29:11-14",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Jeremiah 29:11",
+        "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Jeremiah 29:11-14",
+        "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope. Then you will call upon Me and come and pray to Me, and I will listen to you. You will seek Me and find Me when you search for Me with all your heart. I will be found by you, declares the LORD, and I will restore you from captivity and gather you from all the nations and places to which I have banished you, declares the LORD. I will restore you to the place from which I sent you into exile.”"
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Jeremiah 29:9",
+            "text": "For they are falsely prophesying to you in My name; I have not sent them, declares the LORD.”"
+          },
+          {
+            "ref": "Jeremiah 29:10",
+            "text": "For this is what the LORD says: “When Babylon’s seventy years are complete, I will attend to you and confirm My promise to restore you to this place."
+          }
+        ],
+        "after": [
+          {
+            "ref": "Jeremiah 29:15",
+            "text": "Because you may say, “The LORD has raised up for us prophets in Babylon,”"
+          },
+          {
+            "ref": "Jeremiah 29:16",
+            "text": "this is what the LORD says about the king who sits on David’s throne and all the people who remain in this city, your brothers who did not go with you into exile—"
+          }
+        ]
+      },
+      "historicalVoices": [],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "These words were written to exiles, not to people whose lives were going well; the future and the hope were promised in the middle of the loss, not instead of it. That order matters. God's plans rarely spare us the wilderness; they meet us in it."
+      }
+    },
+    {
+      "id": "ROM.8.28-39#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Romans 8:28-39",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Romans 8:37",
+        "text": "in all these things we are more than conquerors through Him who loved us",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Romans 8:28-39",
+        "text": "And we know that God works all things together for the good of those who love Him, who are called according to His purpose. For those God foreknew, He also predestined to be conformed to the image of His Son, so that He would be the firstborn among many brothers. And those He predestined, He also called; those He called, He also justified; those He justified, He also glorified. What then shall we say in response to these things? If God is for us, who can be against us? He who did not spare His own Son but gave Him up for us all, how will He not also, along with Him, freely give us all things? Who will bring any charge against God’s elect? It is God who justifies. Who is there to condemn us? For Christ Jesus, who died, and more than that was raised to life, is at the right hand of God—and He is interceding for us. Who shall separate us from the love of Christ? Shall trouble or distress or persecution or famine or nakedness or danger or sword? As it is written: “For Your sake we face death all day long; we are considered as sheep to be slaughtered.” No, in all these things we are more than conquerors through Him who loved us. For I am convinced that neither death nor life, neither angels nor principalities, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Romans 8:26",
+            "text": "In the same way, the Spirit helps us in our weakness. For we do not know how we ought to pray, but the Spirit Himself intercedes for us with groans too deep for words."
+          },
+          {
+            "ref": "Romans 8:27",
+            "text": "And He who searches our hearts knows the mind of the Spirit, because the Spirit intercedes for the saints according to the will of God."
+          }
+        ],
+        "after": []
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on Romans 8:28",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "That is good for the saints which does their souls good. Afflictions and death itself are not good in themselves, yet God works them together for good to those that love him and are called according to his purpose."
+        },
+        {
+          "source": "Jamieson, Fausset & Brown",
+          "work": "Commentary Critical and Explanatory on the Whole Bible",
+          "locator": "on Romans 8:28",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "All that happens to God's people is so overruled as to promote their spiritual and eternal good. This is not said of all men, but of those that love God—the called according to his purpose."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Not conquerors who avoided the trouble, but more than conquerors through it; the trouble is named first, and named plainly. A faith that only works when life is easy has not met this verse yet. We are carried, not spared."
+      }
+    },
+    {
+      "id": "PHP.4.4-9#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Philippians 4:4-9",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Philippians 4:6",
+        "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Philippians 4:4-9",
+        "text": "Rejoice in the Lord always. I will say it again: Rejoice! Let your gentleness be apparent to all. The Lord is near. Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus. Finally, brothers, whatever is true, whatever is honorable, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think on these things. Whatever you have learned or received or heard from me, or seen in me, put it into practice. And the God of peace will be with you."
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Philippians 4:2",
+            "text": "I urge Euodia and Syntyche to agree with each other in the Lord."
+          },
+          {
+            "ref": "Philippians 4:3",
+            "text": "Yes, and I ask you, my true yokefellow, to help these women who have labored with me for the gospel, along with Clement and the rest of my fellow workers, whose names are in the Book of Life."
+          }
+        ],
+        "after": [
+          {
+            "ref": "Philippians 4:10",
+            "text": "Now I rejoice greatly in the Lord that at last you have revived your concern for me. You were indeed concerned, but you had no opportunity to show it."
+          },
+          {
+            "ref": "Philippians 4:11",
+            "text": "I am not saying this out of need, for I have learned to be content regardless of my circumstances."
+          }
+        ]
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on Philippians 4:6",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "Be careful for nothing—unduly anxious. Pray about everything. Thanksgiving must be joined with prayer. The peace of God shall keep your hearts: a garrison of divine peace about the mind in Christ Jesus."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Paul does not say stop feeling anxious; he says do something with it, item by item, with thanks mixed in. Anxiety left in the chest becomes dread; anxiety handed over becomes peace. The handing over is the work."
+      }
+    },
+    {
+      "id": "ISA.40.28-31#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Isaiah 40:28-31",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Isaiah 40:31a",
+        "text": "But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Isaiah 40:28-31",
+        "text": "Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary; His understanding is beyond searching out. He gives power to the faint and increases the strength of the weak. Even youths grow tired and weary, and young men stumble and fall. But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint."
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Isaiah 40:26",
+            "text": "Lift up your eyes on high: Who created all these? He leads forth the starry host by number; He calls each one by name. Because of His great power and mighty strength, not one of them is missing."
+          },
+          {
+            "ref": "Isaiah 40:27",
+            "text": "Why do you say, O Jacob, and why do you assert, O Israel, “My way is hidden from the LORD, and my claim is ignored by my God”?"
+          }
+        ],
+        "after": []
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on Isaiah 40:31",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "They that wait on the Lord, renewing their strength by faith and prayer, shall be able to do that which is above the measure of their natural ability. God can renew the strength of those who, by waiting on him, fetch in supplies of grace."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Waiting is not passive here; it is the strength itself. We are told strength means pushing harder, and this verse says the opposite: the ones who last are the ones who learned to wait on God rather than on their own reserves."
+      }
+    },
+    {
+      "id": "PRO.3.5-8#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Proverbs 3:5-8",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Proverbs 3:5",
+        "text": "Trust in the LORD with all your heart, and lean not on your own understanding",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Proverbs 3:5-8",
+        "text": "Trust in the LORD with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He will make your paths straight. Be not wise in your own eyes; fear the LORD and turn away from evil. This will bring healing to your body and refreshment to your bones."
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Proverbs 3:3",
+            "text": "Never let loving devotion or faithfulness leave you; bind them around your neck, write them on the tablet of your heart."
+          },
+          {
+            "ref": "Proverbs 3:4",
+            "text": "Then you will find favor and high regard in the sight of God and man."
+          }
+        ],
+        "after": [
+          {
+            "ref": "Proverbs 3:9",
+            "text": "Honor the LORD with your wealth and with the firstfruits of all your harvest;"
+          },
+          {
+            "ref": "Proverbs 3:10",
+            "text": "then your barns will be filled with plenty, and your vats will overflow with new wine."
+          }
+        ]
+      },
+      "historicalVoices": [],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Leaning not on your own understanding does not mean thinking less; it means trusting Someone more than your read of the situation. Most of us lean hardest on ourselves exactly when we are most afraid. This is the invitation to stop."
+      }
+    },
+    {
+      "id": "MAT.11.28-30#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Matthew 11:28-30",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Matthew 11:28",
+        "text": "Come to Me, all you who are weary and burdened, and I will give you rest",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Matthew 11:28-30",
+        "text": "Come to Me, all you who are weary and burdened, and I will give you rest. Take My yoke upon you and learn from Me; for I am gentle and humble in heart, and you will find rest for your souls. For My yoke is easy and My burden is light.”"
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Matthew 11:26",
+            "text": "Yes, Father, for this was well-pleasing in Your sight."
+          },
+          {
+            "ref": "Matthew 11:27",
+            "text": "All things have been entrusted to Me by My Father. No one knows the Son except the Father, and no one knows the Father except the Son and those to whom the Son chooses to reveal Him."
+          }
+        ],
+        "after": []
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on Matthew 11:28",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "The call is free: Come. The character of those invited: all that labour and are heavy laden. The blessing promised: I will give you rest. Rest for the soul is the most desirable rest—to be eased of a burden of sin."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "The invitation is to the weary and burdened, not the rested and ready; you do not have to get yourself together first. The rest here is not the absence of work but a different yoke, one that fits. Come as you are is not a slogan; it is the entry requirement."
+      }
+    },
+    {
+      "id": "1CO.13.1-13#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "1 Corinthians 13:1-13",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "1 Corinthians 13:4a",
+        "text": "Love is patient, love is kind",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "1 Corinthians 13:1-13",
+        "text": "If I speak in the tongues of men and of angels, but have not love, I am only a ringing gong or a clanging cymbal. If I have the gift of prophecy and can fathom all mysteries and all knowledge, and if I have absolute faith so as to move mountains, but have not love, I am nothing. If I give all I possess to the poor and exult in the surrender of my body, but have not love, I gain nothing. Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It is not rude, it is not self-seeking, it is not easily angered, it keeps no account of wrongs. Love takes no pleasure in evil, but rejoices in the truth. It bears all things, believes all things, hopes all things, endures all things. Love never fails. But where there are prophecies, they will cease; where there are tongues, they will be restrained; where there is knowledge, it will be dismissed. For we know in part and we prophesy in part, but when the perfect comes, the partial passes away. When I was a child, I talked like a child, I thought like a child, I reasoned like a child. When I became a man, I set aside childish ways. Now we see but a dim reflection as in a mirror; then we shall see face to face. Now I know in part; then I shall know fully, even as I am fully known. And now these three remain: faith, hope, and love; but the greatest of these is love."
+      },
+      "context": {
+        "before": [],
+        "after": []
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on 1 Corinthians 13:4",
+          "verbatim": false,
+          "confidence": "widelyHeld",
+          "text": "The more excellent way is charity—true Christian love. It is patient and kind; not envious, proud, or selfish. It thinks no evil, rejoices in truth, and endures. Without this, the greatest gifts are nothing."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Patient and kind come first, before any of the grand words, because they are the ones that cost daily. It is easy to feel love and hard to be patient at hour fourteen. This is love with its work clothes on."
+      }
+    },
+    {
+      "id": "GAL.5.22-25#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Galatians 5:22-25",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Galatians 5:22-23",
+        "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Galatians 5:22-25",
+        "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law. Those who belong to Christ Jesus have crucified the flesh with its passions and desires. Since we live by the Spirit, let us walk in step with the Spirit."
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Galatians 5:20",
+            "text": "idolatry and sorcery; hatred, discord, jealousy, and rage; rivalries, divisions, factions,"
+          },
+          {
+            "ref": "Galatians 5:21",
+            "text": "and envy; drunkenness, orgies, and the like. I warn you, as I did before, that those who practice such things will not inherit the kingdom of God."
+          }
+        ],
+        "after": [
+          {
+            "ref": "Galatians 5:26",
+            "text": "Let us not become conceited, provoking and envying one another."
+          }
+        ]
+      },
+      "historicalVoices": [],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Fruit is not manufactured; it grows from what the tree is joined to. The list is not a set of tasks to achieve but evidence of a life rooted in the Spirit. You do not strain to produce fruit; you abide, and it comes."
+      }
+    },
+    {
+      "id": "ROM.12.1-2#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Romans 12:1-2",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Romans 12:2a",
+        "text": "Do not be conformed to this world, but be transformed by the renewing of your mind",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Romans 12:1-2",
+        "text": "Therefore I urge you, brothers, on account of God’s mercy, to offer your bodies as living sacrifices, holy and pleasing to God, which is your spiritual service of worship. Do not be conformed to this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what is the good, pleasing, and perfect will of God."
+      },
+      "context": {
+        "before": [],
+        "after": [
+          {
+            "ref": "Romans 12:3",
+            "text": "For by the grace given me I say to every one of you: Do not think of yourself more highly than you ought, but think of yourself with sober judgment, according to the measure of faith God has given you."
+          },
+          {
+            "ref": "Romans 12:4",
+            "text": "Just as each of us has one body with many members, and not all members have the same function,"
+          }
+        ]
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on Romans 12:2",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "Do not be conformed to this world. Conversion and sanctification are the renewing of the mind—a change not of the substance, but of the qualities of the soul. Prove what is that good and acceptable will of God."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Conformed happens by default; transformed takes a renewed mind, which takes time and repetition. We are shaped by whatever we soak in, for better or worse. Formation is choosing what shapes you before it shapes you without asking."
+      }
+    },
+    {
+      "id": "MAT.6.9-15#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Matthew 6:9-15",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Matthew 6:10",
+        "text": "Your kingdom come, Your will be done, on earth as it is in heaven",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Matthew 6:9-15",
+        "text": "So then, this is how you should pray: ‘Our Father in heaven, hallowed be Your name. Your kingdom come, Your will be done, on earth as it is in heaven. Give us this day our daily bread. And forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from the evil one.’ For if you forgive men their trespasses, your heavenly Father will also forgive you. But if you do not forgive men their trespasses, neither will your Father forgive yours."
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Matthew 6:7",
+            "text": "And when you pray, do not babble on like pagans, for they think that by their many words they will be heard."
+          },
+          {
+            "ref": "Matthew 6:8",
+            "text": "Do not be like them, for your Father knows what you need before you ask Him."
+          }
+        ],
+        "after": [
+          {
+            "ref": "Matthew 6:16",
+            "text": "When you fast, do not be somber like the hypocrites, for they disfigure their faces to show men they are fasting. Truly I tell you, they already have their full reward."
+          },
+          {
+            "ref": "Matthew 6:17",
+            "text": "But when you fast, anoint your head and wash your face,"
+          }
+        ]
+      },
+      "historicalVoices": [],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Your will be done is the hardest line in the prayer, because it means loosening our grip on our own. To pray it honestly is to want God's kingdom more than our own comfort. Most of us have to pray it many times before we mean it."
+      }
+    },
+    {
+      "id": "LAM.3.21-26#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Lamentations 3:21-26",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Lamentations 3:23",
+        "text": "They are new every morning; great is Your faithfulness!",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Lamentations 3:21-26",
+        "text": "Yet I call this to mind, and therefore I have hope: Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness! “The LORD is my portion,” says my soul, “therefore I will hope in Him.” The LORD is good to those who wait for Him, to the soul who seeks Him. It is good to wait quietly for the salvation of the LORD."
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Lamentations 3:19",
+            "text": "Remember my affliction and wandering, the wormwood and the gall."
+          },
+          {
+            "ref": "Lamentations 3:20",
+            "text": "Surely my soul remembers and is humbled within me."
+          }
+        ],
+        "after": [
+          {
+            "ref": "Lamentations 3:27",
+            "text": "It is good for a man to bear the yoke while he is still young."
+          },
+          {
+            "ref": "Lamentations 3:28",
+            "text": "Let him sit alone in silence, for God has disciplined him."
+          }
+        ]
+      },
+      "historicalVoices": [],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "This is said by a man in ruins; the faithfulness is great precisely because everything else has failed. New every morning means we do not have to carry yesterday's supply. Mercy does not stockpile; it arrives fresh, daily, like bread."
+      }
+    },
+    {
+      "id": "HEB.11.1-3#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Hebrews 11:1-3",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Hebrews 11:1",
+        "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Hebrews 11:1-3",
+        "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see. This is why the ancients were commended. By faith we understand that the universe was formed at God’s command, so that what is seen was not made out of what was visible."
+      },
+      "context": {
+        "before": [],
+        "after": [
+          {
+            "ref": "Hebrews 11:4",
+            "text": "By faith Abel offered God a better sacrifice than Cain did. By faith he was commended as righteous when God gave approval to his gifts. And by faith he still speaks, even though he is dead."
+          },
+          {
+            "ref": "Hebrews 11:5",
+            "text": "By faith Enoch was taken up so that he did not see death: “He could not be found, because God had taken him away.” For before he was taken, he was commended as one who pleased God."
+          }
+        ]
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on Hebrews 11:1",
+          "verbatim": false,
+          "confidence": "oneReading",
+          "text": "Faith is the firm belief that God will perform all he has promised in Christ. It is the substance of things hoped for—it makes them real to the soul—and the evidence of things not seen."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Faith is not certainty about what we can see; it is assurance about what we cannot. That is why it is called faith and not sight. It does not remove the unseen; it lets us stand on it anyway."
+      }
+    },
+    {
+      "id": "MIC.6.6-8#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Micah 6:6-8",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Micah 6:8b",
+        "text": "And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Micah 6:6-8",
+        "text": "With what shall I come before the LORD when I bow before the God on high? Should I come to Him with burnt offerings, with year-old calves? Would the LORD be pleased with thousands of rams, with ten thousand rivers of oil? Shall I present my firstborn for my transgression, the fruit of my body for the sin of my soul? He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?"
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Micah 6:4",
+            "text": "For I brought you up from the land of Egypt and redeemed you from the house of slavery. I sent Moses before you, as well as Aaron and Miriam."
+          },
+          {
+            "ref": "Micah 6:5",
+            "text": "My people, remember what Balak king of Moab counseled and what Balaam son of Beor answered. Remember your journey from Shittim to Gilgal, so that you may acknowledge the righteousness of the LORD.’”"
+          }
+        ],
+        "after": [
+          {
+            "ref": "Micah 6:9",
+            "text": "The voice of the LORD calls out to the city (and it is sound wisdom to fear Your name): “Heed the rod and the One who ordained it."
+          },
+          {
+            "ref": "Micah 6:10",
+            "text": "Can I forget any longer, O house of the wicked, the treasures of wickedness and the short ephah, which is accursed?"
+          }
+        ]
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on Micah 6:8",
+          "verbatim": false,
+          "confidence": "widelyHeld",
+          "text": "The good which God requires of us is not expensive sacrifices, but to do justly, love mercy, and walk humbly with our God. These are more acceptable than thousands of rams."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Not sacrifices, not spectacle, just this: to act justly, to love mercy, to walk humbly. The requirement is smaller than we fear and harder than we hope. A whole life fits inside those three."
+      }
+    },
+    {
+      "id": "2CO.12.7-10#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "2 Corinthians 12:7-10",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "2 Corinthians 12:9a",
+        "text": "My grace is sufficient for you, for My power is perfected in weakness",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "2 Corinthians 12:7-10",
+        "text": "or because of these surpassingly great revelations. So to keep me from becoming conceited, I was given a thorn in my flesh, a messenger of Satan, to torment me. Three times I pleaded with the Lord to take it away from me. But He said to me, “My grace is sufficient for you, for My power is perfected in weakness.” Therefore I will boast all the more gladly in my weaknesses, so that the power of Christ may rest on me. That is why, for the sake of Christ, I delight in weaknesses, in insults, in hardships, in persecutions, in difficulties. For when I am weak, then I am strong."
+      },
+      "context": {
+        "before": [],
+        "after": []
+      },
+      "historicalVoices": [],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "Paul asked three times for the thorn to go, and the answer was not removal but sufficiency. Grace did not fix him; it held him. Weakness turned out to be the place strength gets in."
+      }
+    },
+    {
+      "id": "EPH.2.8-10#card",
+      "reviewDecision": null,
+      "translation": "BSB",
+      "reference": "Ephesians 2:8-10",
+      "photo": {
+        "status": "none",
+        "note": "Birchwood farm photo goes here for the share background."
+      },
+      "focus": {
+        "reference": "Ephesians 2:8a",
+        "text": "For it is by grace you have been saved through faith",
+        "standsAlone": true,
+        "source": "scripture-verbatim"
+      },
+      "passage": {
+        "reference": "Ephesians 2:8-10",
+        "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast. For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance as our way of life."
+      },
+      "context": {
+        "before": [
+          {
+            "ref": "Ephesians 2:6",
+            "text": "And God raised us up with Christ and seated us with Him in the heavenly realms in Christ Jesus,"
+          },
+          {
+            "ref": "Ephesians 2:7",
+            "text": "in order that in the coming ages He might display the surpassing riches of His grace, demonstrated by His kindness to us in Christ Jesus."
+          }
+        ],
+        "after": [
+          {
+            "ref": "Ephesians 2:11",
+            "text": "Therefore remember that formerly you who are Gentiles in the flesh and called uncircumcised by the so-called circumcision (that done in the body by human hands)—"
+          },
+          {
+            "ref": "Ephesians 2:12",
+            "text": "remember that at that time you were separate from Christ, alienated from the commonwealth of Israel, and strangers to the covenants of the promise, without hope and without God in the world."
+          }
+        ]
+      },
+      "historicalVoices": [
+        {
+          "source": "Matthew Henry",
+          "work": "Commentary on the Whole Bible (Concise)",
+          "locator": "on Ephesians 2:8",
+          "verbatim": false,
+          "confidence": "widelyHeld",
+          "text": "Every converted sinner is a saved sinner: delivered from sin and wrath. Grace is the original source; faith the means—and even that not of ourselves; it is the gift of God. Boasting is excluded."
+        }
+      ],
+      "ctmReflection": {
+        "source": "Common Table Ministries",
+        "confidence": "personal",
+        "status": "draft",
+        "text": "By grace, through faith, not from yourselves; every clause closes another door on earning it. This is the hardest gift for capable people to receive, because there is nothing to do but take it. We are saved by what was done, not by what we manage."
+      }
+    }
+  ]
+}
